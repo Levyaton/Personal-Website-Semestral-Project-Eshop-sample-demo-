@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'OldLondon';
+    src: url('../assets/OldLondon.ttf');
+    src: url('../assets/Olondona.otf');
+}
+
+* {
+    font-family: 'OldLondon';
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.topnav {
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%; 
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  .topnav :last-child {
+      margin-left: auto;
+      margin-right: 20px;
+  }
+
+  
+  .topnav a:hover {
+    background-color: #111;
+  }
+  
+  .topnav a.active {
+    background-color: #8b0000;
+  }
+  
+  .topnav a.chatLink{
+      float: right;
+      margin-right: 20px;
+  }
+
+  .bodyContainer{
+      height: 100%;
+      background-color: silver
+  }

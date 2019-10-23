@@ -1,0 +1,8 @@
+body {margin:0;}
+
+.bodyContainer{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

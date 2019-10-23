@@ -1,0 +1,16 @@
+
+#formBox{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#loginTitle{
+    font-size: 75px;
+}
+
+
+#formBox input{
+    margin-left: 20px;
+    font-size: 15px;
+}
