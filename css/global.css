@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'OldLondon';
-    src: url('../assets/OldLondon.ttf');
-    src: url('../assets/Olondona.otf');
+    src: url('/~levymaty/assets/OldLondon.ttf');
+    src: url('/~levymaty/assets/Olondona.otf');
 }
 
 * {

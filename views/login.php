@@ -16,12 +16,12 @@
 </head>
 <body>
     <div class="topnav">
-        <a href="./homepage.html">Home</a>
-        <a href="./about.html">About Me</a>
-        <a href="./whats_new.html">What's New</a>
-        <a href="./gallery.html">Gallery</a>
-        <a href="./git.html">Git</a>
-        <a href="./contact.html">Contact</a>
+        <a href="/~levymaty/views/homepage.php">Home</a>
+        <a href="/~levymaty/views/about.php">About Me</a>
+        <a href="/~levymaty/views/whats_new.php">What's New</a>
+        <a href="/~levymaty/views/gallery.php">Gallery</a>
+        <a href="/~levymaty/views/git.php">Git</a>
+        <a href="/~levymaty/views/contact.php">Contact</a>
 
 
         <div class="loginBox">
@@ -30,12 +30,18 @@
                     <input id="password" type="password" placeholder="Password">
                     <button id="loginButton" type="submit">login</button>
             </form>
+
+            <button id="signOut">Sign Out</button>
         </div>
 
     </div>
     
 
-    <script src="/~levymaty/js/login.js"></script>
+    <script src="/~levymaty/views/js/login.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </body> 
 
 

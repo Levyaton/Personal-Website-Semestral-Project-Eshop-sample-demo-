@@ -16,13 +16,13 @@
 
 
 <div class="topnav">
- <a href="./homepage.html">Home</a>
-  <a class="active" href="./about.html">About Me</a>
-  <a href="./whats_new.html">What's New</a>
-  <a href="./gallery.html">Gallery</a>
-  <a href="./git.html">Git</a>
-  <a href="./contact.html">Contact</a>
-  <a class="chatLink" href="./login.html">Login</a>
+ <a href="/~levymaty/views/homepage.php">Home</a>
+  <a class="active" href="/~levymaty/views/about.php">About Me</a>
+  <a href="/~levymaty/views/whats_new.php">What's New</a>
+  <a href="/~levymaty/views/gallery.php">Gallery</a>
+  <a href="/~levymaty/views/git.php">Git</a>
+  <a href="/~levymaty/views/contact.php">Contact</a>
+  <a class="chatLink" href="/~levymaty/views/login.php">Login</a>
 </div>
 
 <div class="text" style="padding-left:20px padding-right:20px">
@@ -82,5 +82,9 @@
 </div>
 
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </body>
 </html>
