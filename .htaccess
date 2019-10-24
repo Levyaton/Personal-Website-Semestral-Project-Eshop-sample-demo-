@@ -1,0 +1,12 @@
+RewriteEngine On
+
+#rewrite
+RewriteRule ^services/?$ consultancy [L,NC]
+
+#redirect
+RewriteRule ^services/a/b/?$ consultancy [L,NC,R=302]
+
+#LEGACY
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ([a-z])$ index.php?id=$1 [NC]
