@@ -19,26 +19,13 @@
   crossorigin="anonymous"></script>
 </body>
 
-<div class="topnav">
- <a href="/~levymaty/views/homepage.php">Home</a>
-  <a href="/~levymaty/views/about.php">About Me</a>
-  <a href="/~levymaty/views/whats_new.php">What's New</a>
-  <a class="active">Gallery</a>
-  <a href="/~levymaty/views/git.php">Git</a>
-  <a href="/~levymaty/views/contact.php">Contact</a>
-  <a class="chatLink" href="/~levymaty/views/login.php">Login</a>
-</div>
 
-<div class="sidenav">
-	<ul>
-		<li><a href="C:\Users\czech\Documents\WebDev\gallery.php">Intro</a></li>
-		<li><a href="C:\Users\czech\Documents\WebDev\gallery-gallery.php">Image Gallery</a>
-		<li><a class="active" href="C:\Users\czech\Documents\WebDev\gallery-stories.php">Writing</a></li>
-	</ul>
-	
-</div>
+<?php
+	include ('navbar.php');
+?>
 
-<div class="text" style="padding-left:16px">
+
+<div class='bodyContainer' style="padding-left:16px">
 	<h1>Reviews:</h1>
 	<li><a class="topEdges" href="https://nbase.cz/recenze/nintendo-3ds-a-2ds/pokemon-sun-moon-netradicni-pokemoni-zazitek/">Pokémon Sun & Moon – Netradiční Pokémoní zážitek</a></li>
 	<li><a href="https://nbase.cz/recenze/nintendo-3ds-a-2ds/pokemon-super-mystery-dungeon-preslap-nebo-pravoplatny-spin-off/">Pokémon Super Mystery Dungeon – Přešlap nebo právoplatný spin-off?</a></li>

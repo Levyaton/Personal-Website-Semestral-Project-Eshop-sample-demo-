@@ -1,4 +1,5 @@
 <?php
+
 switch ($_SERVER['REQUEST_URI']) {
     case '/~levymaty' :
         require __DIR__ . '/views/homepage.php';
@@ -21,11 +22,26 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/~levymaty/whats_new' :
         require __DIR__ . '/views/whats_new.php';
         break;
+    case '/~levymaty/gallery' :
+        require __DIR__ . '/views/gallery.php';
+        break;
     case '/~levymaty/gallery-gallery' :
         require __DIR__ . '/views/gallery-gallery.php';
         break;
+    case '/~levymaty/myArt' :
+        require __DIR__ . '/views/myArt.php';
+        break;
+    case '/~levymaty/fanart' :
+        require __DIR__ . '/views/fanart.php';
+        break;
     case '/~levymaty/gallery-stories' :
         require __DIR__ . '/views/gallery-stories.php';
+        break;
+    case '/~levymaty/register' :
+        require __DIR__ . '/views/register.php';
+        break;
+    case '/~levymaty/videos' :
+        require __DIR__ . '/views/videos.php';
         break;
     
     default: 

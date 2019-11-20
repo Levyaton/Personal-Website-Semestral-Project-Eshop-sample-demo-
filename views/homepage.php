@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,19 +18,11 @@
 </head>
 <body>
 
+<?php
+	include ('navbar.php');
+?>
 
-
-<div class="topnav">
-  <a href="/~levymaty/views/homepage.php">Home</a>
-  <a href="/~levymaty/views/about.php">About Me</a>
-  <a href="/~levymaty/views/whats_new.php">What's New</a>
-  <a href="/~levymaty/views/gallery.php">Gallery</a>
-  <a href="/~levymaty/views/git.php">Git</a>
-  <a href="/~levymaty/views/contact.php">Contact</a>
-  <a href="/~levymaty/views/login.php">Login</a>
-</div>
-
-<div class='bodyContainer'>	
+<div class='bodyContainer'>		
 	<h2>Welcome to the home page of Matthias Levy, The Deamon of Prague, Levyaton, MatyTheRed!</h2>
 	<p>I hope you survive the experience ;-)</p>
 	<img src="/~levymaty/assets/levyaton.gif" alt="Levyaton">

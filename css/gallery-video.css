@@ -9,7 +9,7 @@ body {margin:0;}
   border: 1px solid #555;
   width: 200px;
   height: 100%;
-  position: fixed;
+  position: absolute;
   overflow: auto;
 }
 
@@ -64,4 +64,23 @@ body {margin:0;}
   margin-right: 40px;
 }
 
+.grayBodyContainer{
+    margin-left: 200px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    flex-direction: column;
+    height: 100%;
+  }
 
+  iframe {
+      margin-top: 5%;   
+  }
+
+  .grayBodyContainer p{
+      width: 65%;
+      color: black;
+      margin-top: 3%;
+  }

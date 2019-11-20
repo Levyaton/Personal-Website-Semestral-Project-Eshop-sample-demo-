@@ -13,19 +13,13 @@
 	href = "/~levymaty/css/whatsNew.css"
 	/>
 </head>
+<body>
 
-<div class="topnav">
-    <a href="/~levymaty/views/homepage.php">Home</a>
-  <a href="/~levymaty/views/about.php">About Me</a>
-  <a class="active"  href="/~levymaty/views/whats_new.php">What's New</a>
-  <a href="/~levymaty/views/gallery.php">Gallery</a>
-  <a href="/~levymaty/views/git.php">Git</a>
-  <a href="/~levymaty/views/contact.php">Contact</a>
-  <a class="chatLink" href="/~levymaty/views/login.php">Login</a>
-</div>
+<?php
+	include ('navbar.php');
+?>
 
-<div class="text">
-	<center>
+<div class='bodyContainer'>	
 		<h1 class="title">Big Time!</h1>
 		<article>
 			<h3>Life is going great right now</h3>
@@ -36,8 +30,6 @@
 			<p>Somehow, I even have a social life, hanging out with friends and going on dates with girls (Thanks Tinder! Any other age, I would probably die alone, thanks to yout, though, it seems I will not!).</p>
 			<p>Indeed, things are good. Everything is working out. For now...</p>
 		<article>
-		
-	</center>
 
 </div>
 

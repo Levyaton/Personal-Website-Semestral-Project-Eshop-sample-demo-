@@ -13,19 +13,13 @@
 	href = "/~levymaty/css/about.css"
 	/>
 </head>
+<body>
 
+<?php
+	include ('navbar.php');
+?>
 
-<div class="topnav">
- <a href="/~levymaty/views/homepage.php">Home</a>
-  <a class="active" href="/~levymaty/views/about.php">About Me</a>
-  <a href="/~levymaty/views/whats_new.php">What's New</a>
-  <a href="/~levymaty/views/gallery.php">Gallery</a>
-  <a href="/~levymaty/views/git.php">Git</a>
-  <a href="/~levymaty/views/contact.php">Contact</a>
-  <a class="chatLink" href="/~levymaty/views/login.php">Login</a>
-</div>
-
-<div class="text" style="padding-left:20px padding-right:20px">
+<div class='bodyContainer'>	
 	<article>
 		<h1>A very brief Introduction</h1>
 		<p>I am a 21 year old university student, attending the Czech Technical University in Prague. I am bilinugal, my mother being Czech and my father American. 

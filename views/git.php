@@ -13,22 +13,13 @@
 	href = "/~levymaty/css/git.css"
 	/>
 </head>
-
-
-<div class="topnav">
- <a href="/~levymaty/views/homepage.php">Home</a>
-  <a href="/~levymaty/views/about.php">About Me</a>
-  <a href="/~levymaty/views/whats_new.php">What's New</a>
-  <a href="/~levymaty/views/gallery.php">Gallery</a>
-  <a class="active" href="/~levymaty/views/git.php">Git</a>
-  <a href="/~levymaty/views/contact.php">Contact</a>
-  <a class="chatLink" href="/~levymaty/views/login.php">Login</a>
-</div>
-
-
+<body>	
 	
-	
-<div class="text" style="padding-left:16px">
+<?php
+	include ('navbar.php');
+?>
+
+<div class='bodyContainer'>	
 	<h1>Take a look at some of my project's!</h1>
 	<li><a href="https://github.com/Levyaton">Personal Github</a></li>
 	<li><a href="https://gitlab.fel.cvut.cz/levymaty">School Gitlab</a></li>

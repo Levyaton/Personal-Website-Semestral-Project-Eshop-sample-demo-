@@ -24,24 +24,35 @@
         <a href="/~levymaty/views/contact.php">Contact</a>
 
 
-        <div class="loginBox">
-            <form id="formBox">
-                    <input id="username" type="text" placeholder="Username">
-                    <input id="password" type="password" placeholder="Password">
-                    <button id="loginButton" type="submit">login</button>
-            </form>
+         <div id="formBox">
+        <?php
 
-            <button id="signOut">Sign Out</button>
-        </div>
+			if (isSet($_SESSION["loggedin"])) {
+				echo '
+				<form id = "login" action="/~levymaty/api/logout.php" method="post">
+					<button type="submit" id ="logout" type="button">logout</button>
+				</form>
+				';
+			} else {
+				echo '
+				<form id = "login" action="/~levymaty/api/authenticate.php" method="post">
+					<input type="text" name="username" placeholder="Username" id="username" required>
+					<input type="password" name="password" placeholder="Password" id="password" required>
+					<input type="submit" value="Login">
+				</form>
+				';
+			}
+		?>
+</div>
 
     </div>
     
 
-    <script src="/~levymaty/views/js/login.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
 </body> 
 
 

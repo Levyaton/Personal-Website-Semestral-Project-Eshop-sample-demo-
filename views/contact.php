@@ -13,19 +13,13 @@
 	href = "/~levymaty/css/contact.css"
 	/>
 </head>
+<body>
 
+<?php
+	include ('navbar.php');
+?>
 
-<div class="topnav">
-  <a href="/~levymaty/views/homepage.php">Home</a>
-  <a href="/~levymaty/views/about.php">About Me</a>
-  <a href="/~levymaty/views/whats_new.php">What's New</a>
-  <a href="/~levymaty/views/gallery.php">Gallery</a>
-  <a href="/~levymaty/views/git.php">Git</a>
-  <a class="active" href="/~levymaty/views/contact.php">Contact</a>
-  <a class="chatLink" href="/~levymaty/views/login.php">Login</a>
-</div>
-
-<div class="text" style="padding-left:16px">
+<div class='bodyContainer'>	
 	<h1>You can reach me here:</h1>
 	<p>Email: czech98@gmail.com</p>
 	<p>Facebook: <a href="https://www.facebook.com/maty.levy.10">Levyaton</a></p>

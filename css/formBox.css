@@ -1,0 +1,64 @@
+#forgot{
+    text-decoration: underline;
+    color: red;
+    font-size: 0.5em;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-top: 2px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+#forgot:hover{
+    background-color: #333;
+  }
+
+.passwordBlock{
+  display: flex;
+  flex-direction: column;
+}
+
+#formBox{
+  margin: auto;
+  margin-right: 20px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+
+.buttons{
+    font-size: 0.8em;
+    height: 20px;
+}
+
+#login{
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+  height: 30px;
+}
+
+#username{
+    font-size: 0.8em;
+    height: 30px;
+    color: brown;
+    margin-right: 20px;
+}
+
+#password{
+    height: 30px;
+    font-size: 0.8em;
+    color: brown;
+}
+
+#loggedin{
+  float: left;
+}
+
+#user:hover{
+  background-color: #333;
+}

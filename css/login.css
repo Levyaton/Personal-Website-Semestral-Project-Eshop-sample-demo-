@@ -1,16 +1,16 @@
 
-#formBox{
+.formBox{
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 70%;
+}
+
+.form input{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
 }
 
 #loginTitle{
     font-size: 75px;
-}
-
-
-#formBox input{
-    margin-left: 20px;
-    font-size: 15px;
 }
