@@ -8,9 +8,10 @@ body {margin:0;}
   border: 1px solid #555;
   width: 200px;
   height: 100%;
-  position: fixed;
   overflow: auto;
+  position: absolute;
 }
+
 
 .sidenav li a {
   top: 10%;
