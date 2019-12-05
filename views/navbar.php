@@ -1,6 +1,4 @@
-<?php
-	session_start();
-?>
+
 
 <div class="topnav">
   <a href="/~levymaty/" <?php echo ($_SERVER['REQUEST_URI'] == '/~levymaty/') ? 'class="active"' : ''; ?> >Home</a>
