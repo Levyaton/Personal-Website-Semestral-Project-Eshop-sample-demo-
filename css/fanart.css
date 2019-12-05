@@ -1,3 +1,12 @@
+#area{
+    visibility: hidden;
+    position: absolute;
+   
+    left: 13%;
+    background-color:white;
+    height: 92.5%;
+    width: 87%;
+}
 #overlayArea{
     visibility: hidden;
     position: absolute;
@@ -51,15 +60,30 @@
 }
 
 .dz-preview.dz-processing.dz-error.dz-complete.dz-image-preview{
-    margin-left: 25%;
-    margin-top: 12%;
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     display: flex;
     background-color: gray;
     flex-direction: column;
     margin: auto;
+}
+
+
+.dz-filename{
+    
+    text-align: center;
+    align-self: center;
+}
+#uploadButton{
+    position: absolute;
+    margin-left: 200px;
+}
+
+#uploadForm{
+    position: absolute;
+    margin-left: 50%;
+    width: auto;
 }
 
 .dz-image img{
@@ -89,7 +113,45 @@
     margin: auto;
 }
 
+#border{
+    width: 42%;
+    height: 72%;
+    margin-left: 25%;
+    margin-top: 5%;
+    position: absolute;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+#fileUpload{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: #8b0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#OAImage{
+    margin-top: 5%;
+    width: 40%;
+    height: auto;
+    background-color: #333;
+}
+
+#fileName{
+    text-align: center;
+    margin-top: 5%;
+    background-color: #333;
+    border: 2px #333;
+    color: white;
+}
+
+#fileSize{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
 
 
 
