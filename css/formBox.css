@@ -39,10 +39,14 @@
   display: flex;
   flex-direction: row;
   font-size: 0.8em;
-  height: 30px;
+  height: auto;
 }
 
+#user{
+  z-index: 2;
+}
 #username{
+    text-decoration: none;
     font-size: 0.8em;
     height: 30px;
     color: brown;
@@ -60,5 +64,31 @@
 }
 
 #user:hover{
+  
   background-color: #333;
 }
+
+.themes{
+  background-color: #8b0000;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 3%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.topnav :last-child{
+  margin-left: 0px;
+  margin: 0%;
+  margin-top: 3.5%;
+}
+
+.topnav a:last-child:hover{
+  border-radius: 0px 0px 15px 15px;
+}
+
+#userBlock{
+  display: flex;
+  flex-direction: column;
+}
+

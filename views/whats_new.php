@@ -15,8 +15,7 @@
 	type = "text/css"
 	href = "/~levymaty/css/whatsNew.css"
 	/>
-</head>
-<body>
+ 
 
 <?php
 	include ('navbar.php');
@@ -32,8 +31,7 @@
 			<p>Meanwhile, school is teching me new types of programming, like this here website, made with css in html and soon, I hope, java script!</p>
 			<p>Somehow, I even have a social life, hanging out with friends and going on dates with girls (Thanks Tinder! Any other age, I would probably die alone, thanks to yout, though, it seems I will not!).</p>
 			<p>Indeed, things are good. Everything is working out. For now...</p>
-		<article>
-
+</article>
 </div>
 
 

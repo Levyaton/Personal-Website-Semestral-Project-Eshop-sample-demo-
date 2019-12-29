@@ -2,20 +2,22 @@
 
 <button id="uploadButton" onclick="document.getElementById('image-file').click();">Upload File</button>
 
-<form enctype="multipart/form-data" action="/upload/image" method="post" id="uploadForm">
-    <input id="image-file" type="file" accept="image/*" style="display: none"/>
+<form enctype="multipart/form-data" action="/~levymaty/api/storeImg.php" method="post" id="uploadForm">
+    <input id="image-file" name ="imgFile" type="file" accept="image/*" style="display: none"/>
+    <input type="text" name="fname" placeholder="Username" id="fname" style="display: none">
+    <input type="button" type="submit" style="display: none" id = "sub"></button>
 </form>
 
 <div id="overlayArea">
     <div id="border">
-        <form id="fileUpload">
+        <form id="fileUpload"  method="post">
             <img id="OAImage" src="/~levymaty/assets/levyaton.gif" alt="Levyaton">
             <input type="text" name="filename" placeholder="Username" id="fileName">
             <p id = "fileName"></p>
             <p id = "fileSize"></p>
             <div id = "CUButtons">
                 <button id ="Cancel" type="button">Cancel</button>
-                <button type="submit" id = "OK">OK</button>
+                <button type="button" id = "OK">OK</button>
             </div>
         </form>
     </div>
@@ -35,8 +37,9 @@
     const oaFileName = document.getElementById("fileName");
     const ok = document.getElementById("OK");
     const cancel = document.getElementById("Cancel");
-
-
+    const submitButton = document.getElementById("sub");
+    const submitName = document.getElementById("fname");
+    const form = document.getElementById("uploadForm");
     function generateFileSizeText(filesize){
         let size;
         if(filesize.toString().length > 5){
@@ -74,6 +77,23 @@
        }
     });
 
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        sendData();
+    });
+
+    ok.addEventListener("click", function(e){ 
+        console.log("Hello ");
+        if(oaFileName.value.length > 0){
+            console.log("World");
+            
+            submitName.value = oaFileName.value;
+            
+            form.submit();
+        }
+       
+    });
     imageFile.onchange = function (evt) {
         
         //button.innerText = imageFile.files[0].name;
@@ -95,6 +115,30 @@
         reader.readAsDataURL(selectedFile);
     };
 
+    function sendData(data) {
+        const XHR = new XMLHttpRequest();
+
+     
+        const FD = new FormData(form);
+
+       
+        XHR.addEventListener("load", function(event) {
+        alert(event.target.responseText);
+        });
+
+        
+        XHR.addEventListener("error", function(event) {
+        alert('Oops! Something went wrong.');
+        });
+
+      
+        XHR.open("POST", "/~levymaty/api/storeImg.php");
+
+     
+        XHR.send(FD);
+    };
+
+  
     
 
 </script>

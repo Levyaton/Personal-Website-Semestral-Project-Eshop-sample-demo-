@@ -13,8 +13,7 @@
 	href = "/~levymaty/css/login.css"
     />
 
-</head>
-<body>
+ 
     <div class="topnav">
         <a href="/~levymaty/views/homepage.php">Home</a>
         <a href="/~levymaty/views/about.php">About Me</a>

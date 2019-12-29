@@ -15,10 +15,8 @@
 	type = "text/css"
 	href = "/~levymaty/css/gallery-video.css"
 	/>
-</head>
 
 
-<body>
 <?php
 	include ('navbar.php');
 ?>

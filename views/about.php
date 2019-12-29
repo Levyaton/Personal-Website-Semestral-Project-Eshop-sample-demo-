@@ -15,8 +15,7 @@
 	type = "text/css"
 	href = "/~levymaty/css/about.css"
 	/>
-</head>
-<body>
+
 
 <?php
 	include ('navbar.php');

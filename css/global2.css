@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'OldLondon';
+    src: url('/~levymaty/assets/OldLondon.ttf');
+    src: url('/~levymaty/assets/Olondona.otf');
+}
+
+* {
+    font-family: 'OldLondon';
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    unicode-bidi: bidi-override; 
+    background-color: #8b0000;
+    color: white;
+}
+
+
+
+html,body{
+    height: 100%;
+}
+
+.topnav {
+    position: fixed;
+    margin-top: 30%;
+    display: flex;
+    overflow: hidden;
+    background-color:#8b0000;
+    width: 100%; 
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    background-color:#333;
+  }
+
+  .topnav :last-child {
+      margin: auto;
+      margin-right: 20px;
+  }
+
+  
+  .topnav a:hover {
+    background-color: #111;
+  }
+  
+  .topnav a.active {
+    background-color:#8b0000;
+  }
+  
+  .topnav a.chatLink{
+      float: right;
+      margin-right: 20px;
+  }
+  
+
+  .bodyContainer{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loggedin{
+  margin: auto;
+  margin-right: 20px;
+}
+
+#sidenavId ul{
+  position: static;
+}
+
+
+
+

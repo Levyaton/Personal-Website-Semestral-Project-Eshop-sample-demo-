@@ -79,3 +79,8 @@ body {margin:0;}
 .allEdges{
 	border-radius: 15px 15px 15px 15px;  
 }
+
+li{
+  color: #111;
+}
+

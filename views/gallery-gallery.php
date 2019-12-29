@@ -15,7 +15,7 @@
 	type = "text/css"
 	href = "/~levymaty/css/gallery-gallery.css"
 	/>
-</head>
+
 
 <?php
 	include ('navbar.php');

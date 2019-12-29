@@ -1,9 +1,10 @@
 <?php
 session_start();
 
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
+
+$DATABASE_HOST = 'wa.toad.cz/adminer/';
+$DATABASE_USER = 'levymaty';
+$DATABASE_PASS = 'webove aplikace';
 $DATABASE_NAME = 'userlist';
 // Try and connect using the info above.
 $conn = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
@@ -45,7 +46,11 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
     $stmt2->close();
     echo '<script>console.log("This username is FREE, congrats")</script>';
     $USERNAME = htmlspecialchars($_POST["username"]);
-    $PASS = htmlspecialchars($_POST["password"]);
+
+	$passwordFromPost = htmlspecialchars($_POST["password"]);
+    $PASS = password_hash($passwordFromPost, PASSWORD_BCRYPT, [
+		'cost' => 11,
+	]);
     $EMAIL = htmlspecialchars($_POST["email"]);
     $sql = "INSERT INTO users (username, password, email) VALUES ('$USERNAME', '$PASS', '$EMAIL')";
     if ($conn->query($sql) === TRUE) {

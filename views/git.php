@@ -15,8 +15,7 @@
 	type = "text/css"
 	href = "/~levymaty/css/git.css"
 	/>
-</head>
-<body>	
+ 	
 	
 <?php
 	include ('navbar.php');
