@@ -71,4 +71,5 @@ if ($stmt->num_rows > 0) {
 }
 $stmt->close();
 header("Location: http://localhost/~levymaty/");
+ob_start()
 ?>
