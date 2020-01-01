@@ -1,6 +1,7 @@
 <?php
 include "../models/db.php";
 
+ob_start();
 session_start();
 // Change this to your connection info.
 //  
@@ -71,5 +72,4 @@ if ($stmt->num_rows > 0) {
 }
 $stmt->close();
 header("Location: http://localhost/~levymaty/");
-ob_start()
 ?>
