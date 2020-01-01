@@ -2,7 +2,7 @@
 session_start();
 
 
-$DATABASE_HOST = 'wa.toad.cz/adminer/';
+$DATABASE_HOST = '127.0.0.1';
 $DATABASE_USER = 'levymaty';
 $DATABASE_PASS = 'webove aplikace';
 $DATABASE_NAME = 'userlist';
