@@ -71,5 +71,5 @@ if ($stmt->num_rows > 0) {
 	echo 'Incorrect username!';
 }
 $stmt->close();
-header("Location: http://localhost/~levymaty/");
+header("Location: http://wa.toad.cz/~levymaty/");
 ?>
