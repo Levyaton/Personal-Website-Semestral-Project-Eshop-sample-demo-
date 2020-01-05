@@ -1,9 +1,10 @@
 <?php
     
-$DATABASE_HOST = 'wa.toad.cz/adminer/';
-$DATABASE_USER = 'levymaty';
-$DATABASE_PASS = 'webove aplikace';
-$DATABASE_NAME = 'userlist';
+    $DATABASE_HOST = 'localhost';
+    $DATABASE_USER = 'root';
+    $DATABASE_PASS = '';
+    $DATABASE_NAME = 'userlist';
+
     // Try and connect using the info above.
     $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
     if ( mysqli_connect_errno() ) {

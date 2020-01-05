@@ -5,7 +5,9 @@
 <form enctype="multipart/form-data" action="/~levymaty/api/storeImg.php" method="post" id="uploadForm">
     <input id="image-file" name ="imgFile" type="file" accept="image/*" style="display: none"/>
     <input type="text" name="fname" placeholder="Username" id="fname" style="display: none">
+    <input type="text" name="src" placeholder="src" id="src" style="display: none">
     <input type="button" type="submit" style="display: none" id = "sub"></button>
+    <img  name= "realImg" id="realImg" src="" alt="Levyaton"  style="display: none">
 </form>
 
 <div id="overlayArea">
@@ -29,6 +31,7 @@
 <script>
     const mb = 0.000001;
     const kb = 0.001;
+    const realImg=document.getElementById("realImg");
     const button = document.getElementById("uploadButton");
     const imageFile = document.getElementById("image-file");
     const oa = document.getElementById("overlayArea");
@@ -40,6 +43,7 @@
     const submitButton = document.getElementById("sub");
     const submitName = document.getElementById("fname");
     const form = document.getElementById("uploadForm");
+    const imgSrc = document.getElementById("src");
     function generateFileSizeText(filesize){
         let size;
         if(filesize.toString().length > 5){
@@ -103,8 +107,12 @@
 
         
         reader.onload = function(evt) {
+            imageFile.files[0] = event.target.result;
             oaImage.src = event.target.result;
+            imgSrc.value = event.target.result;
             oaImage.title = selectedFile.name;
+            realImg.src =  event.target.result;
+            imageFile.src =  event.target.result;
             oa.style.visibility = "visible";
             button.style.visibility = "hidden";
             generateFileSizeText(selectedFile.size);
@@ -139,6 +147,13 @@
     };
 
   
-    
+    File.prototype.convertToBase64 = function(callback){
+
+    var FR= new FileReader();
+    FR.onload = function(e) {
+        callback(e.target.result)
+    };       
+    FR.readAsDataURL(this);
+    }
 
 </script>
