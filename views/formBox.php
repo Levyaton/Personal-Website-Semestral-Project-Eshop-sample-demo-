@@ -12,22 +12,14 @@
 
                          <form id = "themeSelect" style = "display: none" action="/~levymaty/api/changeTheme.php" method="post">
                               <input type="text" name="num" placeholder="1" id="num" required> 
-<<<<<<< HEAD
                               <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none" required> 
-=======
-                              <input style="display:none" type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" required> 
->>>>>>> 8fa73ac62f2a25e3eafbe0f5664ad1618c2b880a
                               <input type="text" name="userName" placeholder="'.$_SESSION["name"].'" id="userName" value="'.$_SESSION["name"].'" required> 
                               <input type="submit" id ="send" value="Login" class="buttons">
                          </form> 
 
                          <form id = "login" action="/~levymaty/api/logout.php" method="post">
                               <div id = "userBlock">
-<<<<<<< HEAD
                               <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none" required> 
-=======
-                                   <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none"  required>
->>>>>>> 8fa73ac62f2a25e3eafbe0f5664ad1618c2b880a
                                    <a id = "user" onclick="nameClick()">' . $_SESSION["name"]. '</a>
                                    <div id = "themes" class= "themes" style = "visibility: hidden">
                                         <a id = "Levyaton" onClick="themeSelect(1)"> Levyaton </a>
@@ -74,12 +66,8 @@
                               <div class= "passwordBlock">
                                    <input type="password" name="password" placeholder="Password" id="password" required>
                               </div>
-<<<<<<< HEAD
                               <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none" required> 
                               
-=======
-                              <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none"  required>
->>>>>>> 8fa73ac62f2a25e3eafbe0f5664ad1618c2b880a
                               <input type="submit" value="Login" class="buttons">
                          </form>
                           <a id = "register" href="/~levymaty/register">Register</a>
