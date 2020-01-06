@@ -8,6 +8,7 @@ $DATABASE_PASS = '';
 $DATABASE_NAME = '';
 
 $link = htmlspecialchars($_SERVER['REQUEST_URI']);
+echo $link;
 if(strpos($link, "toad")){
     $DATABASE_HOST = '127.0.0.1';
     $DATABASE_USER = 'levymaty';
