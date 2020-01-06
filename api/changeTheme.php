@@ -21,6 +21,10 @@ else{
     $DATABASE_PASS = '';
     $DATABASE_NAME = 'userlist';
 }
+echo $DATABASE_HOST;
+echo $DATABASE_USER;
+echo $DATABASE_PASS;
+echo $DATABASE_NAME;
 // Try and connect using the info above.
 $conn = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ($conn->connect_error) {

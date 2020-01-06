@@ -18,6 +18,12 @@
         $DATABASE_PASS = '';
         $DATABASE_NAME = 'userlist';
     }
+    echo $link;
+    echo $DATABASE_HOST;
+    echo $DATABASE_USER;
+    echo $DATABASE_PASS;
+    echo $DATABASE_NAME;
+
     // Try and connect using the info above.
     $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
     if ( mysqli_connect_errno() ) {
