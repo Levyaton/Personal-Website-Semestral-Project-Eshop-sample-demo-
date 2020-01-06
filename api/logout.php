@@ -5,4 +5,6 @@
     unset ($_SESSION['name']);
     unset ($_SESSION['id']);
     unset ($_SESSION['theme']);
-    header("Location: http://localhost/~levymaty/");
+    $link = htmlspecialchars($_POST["link"]);
+    header("Location: ".$link."");
+?>

@@ -36,6 +36,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error updating record: " . $conn->error;
     $conn->close();
     #header("Location: "."404.com");
+    header("Location: ".$link."");
 }
 
 ?>

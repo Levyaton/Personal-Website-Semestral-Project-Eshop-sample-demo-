@@ -41,7 +41,9 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
     echo '<script>console.log("This username is taken, please try again")</script>';
     echo 'This username or email is already taken, please try again';
     $stmt->close();
-    header("Location: http://localhost/~levymaty/gallery");    
+    
+    $link = htmlspecialchars($_POST["link"]);
+    header("Location: ".$link."");
 }else{
     $stmt->close();
     $stmt2->close();
@@ -62,13 +64,13 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
         echo 'Welcome ' . $_SESSION['name'] . '!';
         $stmt->close();
         $conn->close();
-        header("Location: http://localhost/~levymaty/");
     } else {
         error_log("Error: " . $sql . "<br>" . $conn->error);
         echo "Error: " . $sql . "<br>" . $conn->error;
         $stmt->close();
         $conn->close();
-        header("Location: http://localhost/~levymaty/register");
     }
+    $link = htmlspecialchars($_POST["link"]);
+    header("Location: ".$link."");
 }
 ?>
