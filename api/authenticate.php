@@ -33,7 +33,6 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['id'] = $id;
 		$_SESSION['theme'] = $theme;
 		echo 'Welcome ' . $_SESSION['name'] . '!';
-		header("Location: http://localhost/~levymaty/");
 	} else {
 		echo 'Incorrect password!';
 	}
