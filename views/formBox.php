@@ -12,13 +12,14 @@
 
                          <form id = "themeSelect" style = "display: none" action="/~levymaty/api/changeTheme.php" method="post">
                               <input type="text" name="num" placeholder="1" id="num" required> 
-                              <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" required> 
+                              <input style="display:none" type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" required> 
                               <input type="text" name="userName" placeholder="'.$_SESSION["name"].'" id="userName" value="'.$_SESSION["name"].'" required> 
                               <input type="submit" id ="send" value="Login" class="buttons">
                          </form> 
 
                          <form id = "login" action="/~levymaty/api/logout.php" method="post">
                               <div id = "userBlock">
+                                   <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none"  required>
                                    <a id = "user" onclick="nameClick()">' . $_SESSION["name"]. '</a>
                                    <div id = "themes" class= "themes" style = "visibility: hidden">
                                         <a id = "Levyaton" onClick="themeSelect(1)"> Levyaton </a>
@@ -65,7 +66,7 @@
                               <div class= "passwordBlock">
                                    <input type="password" name="password" placeholder="Password" id="password" required>
                               </div>
-                              
+                              <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none"  required>
                               <input type="submit" value="Login" class="buttons">
                          </form>
                           <a id = "register" href="/~levymaty/register">Register</a>

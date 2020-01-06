@@ -55,5 +55,35 @@ error_reporting(E_ALL);
 
   // echo ($html_body);
 }
-header("Location: http://wa.toad.cz/~levymaty/fanart");
+
+$link = htmlspecialchars($_POST["link"]);
+header("Location: ".$link."");
+    
+/*
+    foreach (glob($path) as $fname) {
+        $file = realpath($fname);
+        echo $fname;
+        $arrName = str_split($file);
+        $replacement = array(0 => $tens, 1 => $singles);
+        $arrName = array_replace($arrName,$replacement);
+        rename($file, implode($arrName));
+        $singles++;
+        if($singles==10){
+            $singles = 0;
+            $tens++;
+        }
+        closedir($handle);
+    }
+    $info = pathinfo($imageFile);
+    $ext = $info['extension'];
+    $newFileName =  "01 - ".htmlspecialchars($_SESSION["name"])." - ".htmlspecialchars($_POST["fname"]).".".htmlspecialchars($ext);
+
+    $imageFile = $_FILES['imgFile']['name'];
+    $ext = end((explode(".", $imageFile)));
+    $finalName = $fileName.".".$ext;
+    $dest = $path."/".$finalName;
+    move_uploaded_file( $_FILES['imgFile']['name'], $target);
+    //header("Location: http://localhost/~levymaty/fanart");
+
+    */
 ?>
