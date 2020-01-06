@@ -6,6 +6,7 @@
     <input id="image-file" name ="imgFile" type="file" accept="image/*" style="display: none"/>
     <input type="text" name="fname" placeholder="Username" id="fname" style="display: none">
     <input type="text" name="src" placeholder="src" id="src" style="display: none">
+    <input type="text" name="link" placeholder= <?php echo '"'.$_SERVER['REQUEST_URI'].'"';?> id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none" required> 
     <input type="button" type="submit" style="display: none" id = "sub"></button>
     <img  name= "realImg" id="realImg" src="" alt="Levyaton"  style="display: none">
 </form>

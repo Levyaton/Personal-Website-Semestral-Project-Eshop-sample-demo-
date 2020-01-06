@@ -55,5 +55,6 @@ error_reporting(E_ALL);
 
   // echo ($html_body);
 }
-header("Location: http://wa.toad.cz/~levymaty/fanart");
+$link = htmlspecialchars($_POST["link"]);
+header("Location: ".$link."");
 ?>
