@@ -2,11 +2,10 @@
 
 session_start();
 
-$DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'root';
-    $DATABASE_PASS = '';
-    $DATABASE_NAME = 'userlist';
-
+$DATABASE_HOST = '127.0.0.1';
+$DATABASE_USER = 'levymaty';
+$DATABASE_PASS = 'webove aplikace';
+$DATABASE_NAME = 'levymaty';
 // Try and connect using the info above.
 $conn = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ($conn->connect_error) {

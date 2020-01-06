@@ -72,7 +72,11 @@ header("Location: ".$link."");
             $singles = 0;
             $tens++;
         }
+        closedir($handle);
     }
+    $info = pathinfo($imageFile);
+    $ext = $info['extension'];
+    $newFileName =  "01 - ".htmlspecialchars($_SESSION["name"])." - ".htmlspecialchars($_POST["fname"]).".".htmlspecialchars($ext);
 
     $imageFile = $_FILES['imgFile']['name'];
     $ext = end((explode(".", $imageFile)));
