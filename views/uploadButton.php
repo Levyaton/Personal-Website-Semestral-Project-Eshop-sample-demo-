@@ -8,6 +8,7 @@
     <input type="text" name="src" placeholder="src" id="src" style="display: none">
     <input type="text" name="link" placeholder= <?php echo '"'.$_SERVER['REQUEST_URI'].'"';?> id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none" required> 
     <input type="button" type="submit" style="display: none" id = "sub"></button>
+    <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value= <?php echo '"'.$_SERVER['REQUEST_URI'].'"';?> style="display:none"  required>
     <img  name= "realImg" id="realImg" src="" alt="Levyaton"  style="display: none">
 </form>
 
