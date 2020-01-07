@@ -8,7 +8,7 @@ $DATABASE_PASS = '';
 $DATABASE_NAME = '';
 
 $link = htmlspecialchars($_SERVER['SERVER_NAME']);
-echo $link;
+//echo $link;
 if(strpos($link, "toad")){
     $DATABASE_HOST = '127.0.0.1';
     $DATABASE_USER = 'levymaty';
@@ -21,10 +21,10 @@ else{
     $DATABASE_PASS = '';
     $DATABASE_NAME = 'userlist';
 }
-echo $DATABASE_HOST;
-echo $DATABASE_USER;
-echo $DATABASE_PASS;
-echo $DATABASE_NAME;
+//echo $DATABASE_HOST;
+//echo $DATABASE_USER;
+//echo $DATABASE_PASS;
+//echo $DATABASE_NAME;
 // Try and connect using the info above.
 $conn = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ($conn->connect_error) {
@@ -44,14 +44,14 @@ $sql = "UPDATE `users` SET `theme` = '".$chosenTheme."' WHERE `users`.`username`
 
 if ($conn->query($sql) === TRUE) {
     $_SESSION['theme'] = $chosenTheme;
-    echo "Record updated successfully";
+    //echo "Record updated successfully";
     $conn->close();
     header("Location: ".$link."");
 } else {
    # $error = mysql_error();
     
    # echo "<script>console.log('Error updating record: ' + ' ".$conn->error."');</script>";
-    echo "Error updating record: " . $conn->error;
+    //echo "Error updating record: " . $conn->error;
     $conn->close();
     #header("Location: "."404.com");
     header("Location: ".$link."");
