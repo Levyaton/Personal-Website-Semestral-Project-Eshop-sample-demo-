@@ -1,7 +1,5 @@
 <?php
 include "../models/db.php";
-session_start();
-ob_start();
 
 // Change this to your connection info.
 //  

@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    ob_start();
     
     $DATABASE_HOST = "";
     $DATABASE_USER = "";
