@@ -32,7 +32,7 @@ error_reporting(E_ALL);
     $newFileName =  "01 - ".htmlspecialchars($_SESSION["name"])." - ".htmlspecialchars($_POST["fname"]).".".htmlspecialchars($ext);
 
     if(move_uploaded_file( $_FILES['imgFile']['tmp_name'], $path."/".$newFileName)){
-        echo 'works';
+        //echo 'works';
     }else {
         $html_body = '<h1>File upload error!</h1>';
    switch ($_FILES[0]['error']) {
