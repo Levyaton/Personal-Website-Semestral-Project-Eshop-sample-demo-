@@ -8,6 +8,10 @@ $DATABASE_PASS = '';
 $DATABASE_NAME = '';
 
 $link = htmlspecialchars($_SERVER['SERVER_NAME']);
+
+$goTo = "http://".htmlspecialchars($_SERVER['SERVER_NAME'])."/~levymaty/";
+//echo var_dump($_SERVER);
+//echo $goTo;
 if(strpos($link, "toad")){
     $DATABASE_HOST = '127.0.0.1';
     $DATABASE_USER = 'levymaty';
@@ -55,7 +59,7 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
     //echo 'This username or email is already taken, please try again';
     $stmt->close();
     $link = htmlspecialchars($_POST["link"]);
-    header("Location: ".$link.""); 
+    header("Location: ".$goTo.""); 
 }else{
     $stmt->close();
     $stmt2->close();
@@ -83,6 +87,6 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
         $conn->close();
     }
     $link = htmlspecialchars($_POST["link"]);
-    header("Location: ".$link."");
+    header("Location: ".$goTo."");
 }
 ?>
