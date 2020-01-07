@@ -78,12 +78,12 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
         $_SESSION['loggedin'] = TRUE;
         $_SESSION['name'] = htmlspecialchars($USERNAME);
         //echo 'Welcome ' . $_SESSION['name'] . '!';
-        $stmt->close();
+        //$stmt->close();
         $conn->close();
     } else {
         error_log("Error: " . $sql . "<br>" . $conn->error);
         //echo "Error: " . $sql . "<br>" . $conn->error;
-        $stmt->close();
+        //$stmt->close();
         $conn->close();
     }
     $link = htmlspecialchars($_POST["link"]);
