@@ -26,7 +26,7 @@ html,body{
     position: fixed;
     margin-top: 30%;
     display: flex;
-    overflow: hidden;
+  
     background-color:#8b0000;
     width: 100%; 
   }

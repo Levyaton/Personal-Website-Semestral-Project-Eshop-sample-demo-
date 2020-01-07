@@ -38,7 +38,7 @@ if ( $chosenTheme != 1 && $chosenTheme != 2) {
 	die ('Please enter 1 or 2');
 }
 
-//var_dump($_SESSION);
+var_dump($_SESSION);
 #$query = "UPDATE 'users' SET 'theme' = '".$chosenTheme."' WHERE 'users'.'id' = ".$_SESSION['theme'].";";
 $sql = "UPDATE `users` SET `theme` = '".$chosenTheme."' WHERE `users`.`username` = '".$_SESSION['name']."'";
 
