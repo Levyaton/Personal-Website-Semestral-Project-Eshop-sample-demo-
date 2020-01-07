@@ -58,7 +58,7 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
     //echo '<script>console.log("This username is taken, please try again")</script>';
     //echo 'This username or email is already taken, please try again';
     $stmt->close();
-    $link = htmlspecialchars($_POST["link"]);
+   // $link = htmlspecialchars($_POST["link"]);
     header("Location: ".$goTo.""); 
 }else{
     $stmt->close();
@@ -86,7 +86,7 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
         //$stmt->close();
         $conn->close();
     }
-    $link = htmlspecialchars($_POST["link"]);
+    //$link = htmlspecialchars($_POST["link"]);
     header("Location: ".$goTo."");
 }
 ?>
