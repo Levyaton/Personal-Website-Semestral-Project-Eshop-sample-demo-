@@ -1,0 +1,28 @@
+\hypertarget{login_8php}{}\doxysection{views/login.php File Reference}
+\label{login_8php}\index{views/login.php@{views/login.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}}(is\+Set(\$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}loggedin\char`\"{}\mbox{]})) \mbox{\hyperlink{login_8php_aeab12670c2eaa44ad195b4a8c5222c2f}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{login_8php_aeab12670c2eaa44ad195b4a8c5222c2f}\label{login_8php_aeab12670c2eaa44ad195b4a8c5222c2f}} 
+\index{login.php@{login.php}!else@{else}}
+\index{else@{else}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}} (is\+Set( \$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}loggedin\char`\"{}\mbox{]})) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{                echo \textcolor{stringliteral}{'}}
+\DoxyCodeLine{\textcolor{stringliteral}{                <form id = "login" action="/\string~levymaty/api/authenticate.php" method="post">}}
+\DoxyCodeLine{\textcolor{stringliteral}{                    <input type="text" name="username" placeholder="Username" id="username" required>}}
+\DoxyCodeLine{\textcolor{stringliteral}{                    <input type="password" name="password" placeholder="Password" id="password" required>}}
+\DoxyCodeLine{\textcolor{stringliteral}{                    <input type="submit" value="Login">}}
+\DoxyCodeLine{\textcolor{stringliteral}{                </form>}}
+\DoxyCodeLine{\textcolor{stringliteral}{                '}}
+
+\end{DoxyCode}

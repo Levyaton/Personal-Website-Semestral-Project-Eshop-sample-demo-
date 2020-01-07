@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="get_images_8php" kind="file" language="PHP">
+    <compoundname>getImages.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="get_images_8php_1abb35c8495a232b510389fa6d7b15d38a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$request</definition>
+        <argsstring></argsstring>
+        <name>$request</name>
+        <initializer>= $_POST[&quot;imageType&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="api/getImages.php" line="2" column="5" bodyfile="api/getImages.php" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="get_images_8php_1a0a4baf0b22973c07685c3981f0d17fc4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$path</definition>
+        <argsstring></argsstring>
+        <name>$path</name>
+        <initializer>=__DIR__ . &apos;/..&apos;. &apos;/assets/&apos;.$request</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="api/getImages.php" line="3" column="5" bodyfile="api/getImages.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="get_images_8php_1a9590b15215a21e9b42eb546aeef79704" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$files</definition>
+        <argsstring></argsstring>
+        <name>$files</name>
+        <initializer>= scandir($path)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="api/getImages.php" line="4" column="5" bodyfile="api/getImages.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="get_images_8php_1a112ef069ddc0454086e3d1e6d8d55d07" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$result</definition>
+        <argsstring></argsstring>
+        <name>$result</name>
+        <initializer>= json_encode($arr).&quot;\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="api/getImages.php" line="5" column="5" bodyfile="api/getImages.php" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="get_images_8php_1abb35c8495a232b510389fa6d7b15d38a" kindref="member">$request</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&quot;imageType&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="get_images_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kindref="member">$path</ref><sp/>=__DIR__<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/..&apos;</highlight><highlight class="normal">.<sp/></highlight><highlight class="stringliteral">&apos;/assets/&apos;</highlight><highlight class="normal">.$request;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="get_images_8php_1a9590b15215a21e9b42eb546aeef79704" kindref="member">$files</ref><sp/>=<sp/>scandir(<ref refid="get_images_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kindref="member">$path</ref>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="get_images_8php_1a112ef069ddc0454086e3d1e6d8d55d07" kindref="member">$result</ref><sp/>=<sp/>json_encode($arr).</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/><ref refid="get_images_8php_1a112ef069ddc0454086e3d1e6d8d55d07" kindref="member">$result</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="api/getImages.php"/>
+  </compounddef>
+</doxygen>

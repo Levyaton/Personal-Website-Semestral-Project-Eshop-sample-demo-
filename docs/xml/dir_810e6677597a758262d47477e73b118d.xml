@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_810e6677597a758262d47477e73b118d" kind="dir">
+    <compoundname>views</compoundname>
+    <innerfile refid="about_8php">about.php</innerfile>
+    <innerfile refid="contact_8php">contact.php</innerfile>
+    <innerfile refid="fanart_8php">fanart.php</innerfile>
+    <innerfile refid="form_box_8php">formBox.php</innerfile>
+    <innerfile refid="gallery-gallery_8php">gallery-gallery.php</innerfile>
+    <innerfile refid="gallery-stories_8php">gallery-stories.php</innerfile>
+    <innerfile refid="gallery_8php">gallery.php</innerfile>
+    <innerfile refid="git_8php">git.php</innerfile>
+    <innerfile refid="homepage_8php">homepage.php</innerfile>
+    <innerfile refid="image_gallery_body_8php">imageGalleryBody.php</innerfile>
+    <innerfile refid="image_gallery_script_8php">imageGalleryScript.php</innerfile>
+    <innerfile refid="image_generator_8php">imageGenerator.php</innerfile>
+    <innerfile refid="image_upload_8php">imageUpload.php</innerfile>
+    <innerfile refid="login_8php">login.php</innerfile>
+    <innerfile refid="my_art_8php">myArt.php</innerfile>
+    <innerfile refid="navbar_8php">navbar.php</innerfile>
+    <innerfile refid="register_8php">register.php</innerfile>
+    <innerfile refid="upload_button_8php">uploadButton.php</innerfile>
+    <innerfile refid="videos_8php">videos.php</innerfile>
+    <innerfile refid="whats__new_8php">whats_new.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="views/"/>
+  </compounddef>
+</doxygen>

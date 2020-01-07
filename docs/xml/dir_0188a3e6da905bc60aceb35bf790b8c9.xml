@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_0188a3e6da905bc60aceb35bf790b8c9" kind="dir">
+    <compoundname>api</compoundname>
+    <innerfile refid="authenticate_8php">authenticate.php</innerfile>
+    <innerfile refid="change_theme_8php">changeTheme.php</innerfile>
+    <innerfile refid="get_images_8php">getImages.php</innerfile>
+    <innerfile refid="logout_8php">logout.php</innerfile>
+    <innerfile refid="register__user_8php">register_user.php</innerfile>
+    <innerfile refid="store_img_8php">storeImg.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="api/"/>
+  </compounddef>
+</doxygen>

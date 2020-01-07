@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="videos_8php" kind="file" language="PHP">
+    <compoundname>videos.php</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>session_start();</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">&lt;!DOCTYPE<sp/>html&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">&lt;html&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">&lt;head&gt;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">&lt;meta<sp/>name=</highlight><highlight class="stringliteral">&quot;viewport&quot;</highlight><highlight class="normal"><sp/>content=</highlight><highlight class="stringliteral">&quot;width=device-width,<sp/>initial-scale=1&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">&lt;link<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>rel<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;stylesheet&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>href<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/~levymaty/css/global.css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>/&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;link<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>rel<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;stylesheet&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>href<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/~levymaty/css/gallery-video.css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>/&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/>(</highlight><highlight class="stringliteral">&apos;navbar.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">&lt;div<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&apos;grayBodyContainer&apos;</highlight><highlight class="normal">&gt;<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">&lt;iframe<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>width=</highlight><highlight class="stringliteral">&quot;951&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>height=</highlight><highlight class="stringliteral">&quot;535&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>src=</highlight><highlight class="stringliteral">&quot;https://www.youtube.com/embed/5TpSCJErw0M&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>frameborder=</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>allow=</highlight><highlight class="stringliteral">&quot;accelerometer;<sp/>autoplay;<sp/>encrypted-media;<sp/>gyroscope;<sp/>picture-in-picture&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>allowfullscreen&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">&lt;/iframe&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">&lt;p&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>The<sp/>creation<sp/>of<sp/>the<sp/>above<sp/>video<sp/>started<sp/>with<sp/>a<sp/>simple<sp/>premise:<sp/>Levyaton<sp/>running<sp/>from<sp/>something,<sp/>ending<sp/>in<sp/>the<sp/>way<sp/>that<sp/>the<sp/>video<sp/>ends.<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>The<sp/>original<sp/>plan<sp/>was<sp/>to<sp/>have<sp/>Levyaton</highlight><highlight class="stringliteral">&apos;s<sp/>dog<sp/>chase<sp/>him,<sp/>however,<sp/>the<sp/>hound<sp/>was<sp/>quite<sp/>uncooperative<sp/>in<sp/>our<sp/>filming<sp/>efforts,<sp/>resulting<sp/>in<sp/>unusable<sp/>footage.</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Instead,<sp/>we<sp/>opted<sp/>to<sp/>use<sp/>a<sp/>toy<sp/>car<sp/>borrowed<sp/>from<sp/>Levyatons<sp/>sister.<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Levyaton<sp/>was<sp/>filmed<sp/>in<sp/>front<sp/>of<sp/>a<sp/>green<sp/>screen<sp/>at<sp/>school<sp/>by<sp/>Mia.<sp/>The<sp/>backgrounds<sp/>and<sp/>intro<sp/>were<sp/>her<sp/>ideas,<sp/>while<sp/>the<sp/>ending<sp/>and<sp/>story<sp/>were<sp/>Levyatons.<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral">&lt;/p&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral">&lt;script</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/>src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot;</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/>integrity=&quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=&quot;</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/>crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral">&lt;/body&gt;</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral">&lt;/html&gt;</highlight></codeline>
+    </programlisting>
+    <location file="views/videos.php"/>
+  </compounddef>
+</doxygen>

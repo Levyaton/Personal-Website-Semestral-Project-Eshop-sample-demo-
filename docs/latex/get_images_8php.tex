@@ -1,0 +1,40 @@
+\hypertarget{get_images_8php}{}\doxysection{api/get\+Images.php File Reference}
+\label{get_images_8php}\index{api/getImages.php@{api/getImages.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{get_images_8php_abb35c8495a232b510389fa6d7b15d38a}{\$request}} = \$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}image\+Type\char`\"{}\mbox{]}
+\item 
+\mbox{\hyperlink{get_images_8php_a0a4baf0b22973c07685c3981f0d17fc4}{\$path}} =\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+ . \textquotesingle{}/..\textquotesingle{}. \textquotesingle{}/assets/\textquotesingle{}.\$request
+\item 
+\mbox{\hyperlink{get_images_8php_a9590b15215a21e9b42eb546aeef79704}{\$files}} = scandir(\$path)
+\item 
+\mbox{\hyperlink{get_images_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = json\+\_\+encode(\$arr).\char`\"{}\textbackslash{}n\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{get_images_8php_a9590b15215a21e9b42eb546aeef79704}\label{get_images_8php_a9590b15215a21e9b42eb546aeef79704}} 
+\index{getImages.php@{getImages.php}!\$files@{\$files}}
+\index{\$files@{\$files}!getImages.php@{getImages.php}}
+\doxysubsubsection{\texorpdfstring{\$files}{$files}}
+{\footnotesize\ttfamily \$files = scandir(\$path)}
+
+\mbox{\Hypertarget{get_images_8php_a0a4baf0b22973c07685c3981f0d17fc4}\label{get_images_8php_a0a4baf0b22973c07685c3981f0d17fc4}} 
+\index{getImages.php@{getImages.php}!\$path@{\$path}}
+\index{\$path@{\$path}!getImages.php@{getImages.php}}
+\doxysubsubsection{\texorpdfstring{\$path}{$path}}
+{\footnotesize\ttfamily \$path =\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+ . \textquotesingle{}/..\textquotesingle{}. \textquotesingle{}/assets/\textquotesingle{}.\$request}
+
+\mbox{\Hypertarget{get_images_8php_abb35c8495a232b510389fa6d7b15d38a}\label{get_images_8php_abb35c8495a232b510389fa6d7b15d38a}} 
+\index{getImages.php@{getImages.php}!\$request@{\$request}}
+\index{\$request@{\$request}!getImages.php@{getImages.php}}
+\doxysubsubsection{\texorpdfstring{\$request}{$request}}
+{\footnotesize\ttfamily \$request = \$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}image\+Type\char`\"{}\mbox{]}}
+
+\mbox{\Hypertarget{get_images_8php_a112ef069ddc0454086e3d1e6d8d55d07}\label{get_images_8php_a112ef069ddc0454086e3d1e6d8d55d07}} 
+\index{getImages.php@{getImages.php}!\$result@{\$result}}
+\index{\$result@{\$result}!getImages.php@{getImages.php}}
+\doxysubsubsection{\texorpdfstring{\$result}{$result}}
+{\footnotesize\ttfamily \$result = json\+\_\+encode(\$arr).\char`\"{}\textbackslash{}n\char`\"{}}
+

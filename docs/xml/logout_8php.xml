@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="logout_8php" kind="file" language="PHP">
+    <compoundname>logout.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="logout_8php_1a5d346e31b75d916e3bac9cb193bfc97f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$link</definition>
+        <argsstring></argsstring>
+        <name>$link</name>
+        <initializer>= htmlspecialchars($_POST[&quot;link&quot;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="api/logout.php" line="12" column="5" bodyfile="api/logout.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!isset($_SESSION))</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>session_start();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>session_destroy();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>session_start();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>unset<sp/>($_SESSION[</highlight><highlight class="stringliteral">&quot;loggedin&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>unset<sp/>($_SESSION[</highlight><highlight class="stringliteral">&apos;name&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>unset<sp/>($_SESSION[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>unset<sp/>($_SESSION[</highlight><highlight class="stringliteral">&apos;theme&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="logout_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kindref="member">$link</ref><sp/>=<sp/>htmlspecialchars($_POST[</highlight><highlight class="stringliteral">&quot;link&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&quot;Location:<sp/>&quot;</highlight><highlight class="normal">.<ref refid="logout_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kindref="member">$link</ref>.</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="api/logout.php"/>
+  </compounddef>
+</doxygen>

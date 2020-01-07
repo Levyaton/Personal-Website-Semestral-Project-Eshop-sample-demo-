@@ -1,0 +1,37 @@
+.TH "api/getImages.php" 3 "Tue Jan 7 2020" "Version 1.0" "Personal Blog" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+api/getImages.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$request\fP = $_POST['imageType']"
+.br
+.ti -1c
+.RI "\fB$path\fP =__DIR__ \&. '/\&.\&.'\&. '/assets/'\&.$request"
+.br
+.ti -1c
+.RI "\fB$files\fP = scandir($path)"
+.br
+.ti -1c
+.RI "\fB$result\fP = json_encode($arr)\&.'\\n'"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$files = scandir($path)"
+
+.SS "$path =__DIR__ \&. '/\&.\&.'\&. '/assets/'\&.$request"
+
+.SS "$request = $_POST['imageType']"
+
+.SS "$result = json_encode($arr)\&.'\\n'"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Personal Blog from the source code\&.

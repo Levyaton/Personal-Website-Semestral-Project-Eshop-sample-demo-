@@ -1,0 +1,72 @@
+.TH "api/changeTheme.php" 3 "Tue Jan 7 2020" "Version 1.0" "Personal Blog" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+api/changeTheme.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$DATABASE_HOST\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_USER\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_PASS\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_NAME\fP = ''"
+.br
+.ti -1c
+.RI "\fB$link\fP = htmlspecialchars($_SERVER['SERVER_NAME'])"
+.br
+.ti -1c
+.RI "\fBif\fP(strpos($link, 'toad')) \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$conn\fP = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME)"
+.br
+.ti -1c
+.RI "\fBif\fP($conn\->connect_error) \fB$username\fP = htmlspecialchars($_POST['userName'])"
+.br
+.ti -1c
+.RI "\fB$chosenTheme\fP = htmlspecialchars($_POST['num'])"
+.br
+.ti -1c
+.RI "\fBif\fP( $chosenTheme !=1 && $chosenTheme !=2) \fB$sql\fP = 'UPDATE `users` SET `theme` = ''\&.$chosenTheme\&.'' WHERE `users`\&.`username` = ''\&.$_SESSION['name']\&.'''"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$chosenTheme = htmlspecialchars($_POST['num'])"
+
+.SS "$conn = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME)"
+
+.SS "$DATABASE_HOST = ''"
+
+.SS "$DATABASE_NAME = ''"
+
+.SS "$DATABASE_PASS = ''"
+
+.SS "$DATABASE_USER = ''"
+
+.SS "$link = htmlspecialchars($_SERVER['SERVER_NAME'])"
+
+.SS "\fBif\fP ($chosenTheme !=1 &&$chosenTheme !=2) $sql = 'UPDATE `users` SET `theme` = ''\&.$chosenTheme\&.'' WHERE `users`\&.`username` = ''\&.$_SESSION['name']\&.'''"
+
+.SS "\fBif\fP ( $conn\->connect_error) $username = htmlspecialchars($_POST['userName'])"
+
+.SS "\fBif\fP ( $conn\->query( $sql)===TRUE) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+    $DATABASE_HOST = 'localhost'
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Personal Blog from the source code\&.

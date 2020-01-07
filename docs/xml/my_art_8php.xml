@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my_art_8php" kind="file" language="PHP">
+    <compoundname>myArt.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="my_art_8php_1a0a4baf0b22973c07685c3981f0d17fc4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$path</definition>
+        <argsstring></argsstring>
+        <name>$path</name>
+        <initializer>=__DIR__ . &apos;/..&apos;. &apos;/assets/myArt&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views/myArt.php" line="33" column="9" bodyfile="views/myArt.php" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="my_art_8php_1a0c8290c5518daf3c5249c91d22155b41" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$javascriptPath</definition>
+        <argsstring></argsstring>
+        <name>$javascriptPath</name>
+        <initializer>= &apos;&quot;/~levymaty/assets/myArt/&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views/myArt.php" line="34" column="9" bodyfile="views/myArt.php" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>session_start();</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">&lt;!DOCTYPE<sp/>html&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">&lt;html&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">&lt;head&gt;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">&lt;meta<sp/>name=</highlight><highlight class="stringliteral">&quot;viewport&quot;</highlight><highlight class="normal"><sp/>content=</highlight><highlight class="stringliteral">&quot;width=device-width,<sp/>initial-scale=1&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">&lt;link<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>rel<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;stylesheet&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>href<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/~levymaty/css/global.css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>/&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">&lt;link<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>rel<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;stylesheet&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>href<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/~levymaty/css/gallery-gallery.css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>/&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">&lt;link<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>rel<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;stylesheet&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>href<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/~levymaty/css/image.css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>/&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">&lt;link<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>rel<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;stylesheet&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;text/css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>href<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/~levymaty/css/overlay.css&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>/&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;script<sp/>src=</highlight><highlight class="stringliteral">&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js&quot;</highlight><highlight class="normal">&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;?php</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my_art_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kindref="member">$path</ref><sp/>=__DIR__<sp/>.<sp/></highlight><highlight class="stringliteral">&apos;/..&apos;</highlight><highlight class="normal">.<sp/></highlight><highlight class="stringliteral">&apos;/assets/myArt&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my_art_8php_1a0c8290c5518daf3c5249c91d22155b41" kindref="member">$javascriptPath</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&quot;/~levymaty/assets/myArt/&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/>(</highlight><highlight class="stringliteral">&apos;navbar.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/>(</highlight><highlight class="stringliteral">&apos;imageGalleryBody.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>include<sp/>(</highlight><highlight class="stringliteral">&apos;imageGalleryScript.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>?&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">&lt;/body&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">&lt;/html&gt;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="views/myArt.php"/>
+  </compounddef>
+</doxygen>

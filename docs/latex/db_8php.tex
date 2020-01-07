@@ -1,0 +1,70 @@
+\hypertarget{db_8php}{}\doxysection{models/db.php File Reference}
+\label{db_8php}\index{models/db.php@{models/db.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{db_8php_a9ec944afb63bf131a4cbda887907c836}{\$\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+H\+O\+ST}} = \char`\"{}\char`\"{}
+\item 
+\mbox{\hyperlink{db_8php_adfdf4bbc1f8066e64d5e0f5e4eefdc57}{\$\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+U\+S\+ER}} = \char`\"{}\char`\"{}
+\item 
+\mbox{\hyperlink{db_8php_ae858da3f69b9d402e0a063e6a7fc2f5b}{\$\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+P\+A\+SS}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{db_8php_a584a643ec0e542b8bf6f042ab5ecc9d2}{\$\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{db_8php_a5d346e31b75d916e3bac9cb193bfc97f}{\$link}} = htmlspecialchars(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}S\+E\+R\+V\+E\+R\+\_\+\+N\+A\+ME\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}}(strpos(\$link, \char`\"{}toad\char`\"{})) \mbox{\hyperlink{db_8php_a47a1810d664dfc129ff886acdecac31f}{else}}
+\item 
+\mbox{\hyperlink{db_8php_a0debe10448ec56a57b5509648408a549}{\$con}} = mysqli\+\_\+connect(\$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+H\+O\+ST, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+U\+S\+ER, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+P\+A\+SS, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{db_8php_a0debe10448ec56a57b5509648408a549}\label{db_8php_a0debe10448ec56a57b5509648408a549}} 
+\index{db.php@{db.php}!\$con@{\$con}}
+\index{\$con@{\$con}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{\$con}{$con}}
+{\footnotesize\ttfamily \$con = mysqli\+\_\+connect(\$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+H\+O\+ST, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+U\+S\+ER, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+P\+A\+SS, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME)}
+
+\mbox{\Hypertarget{db_8php_a9ec944afb63bf131a4cbda887907c836}\label{db_8php_a9ec944afb63bf131a4cbda887907c836}} 
+\index{db.php@{db.php}!\$DATABASE\_HOST@{\$DATABASE\_HOST}}
+\index{\$DATABASE\_HOST@{\$DATABASE\_HOST}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{\$DATABASE\_HOST}{$DATABASE\_HOST}}
+{\footnotesize\ttfamily \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+H\+O\+ST = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{db_8php_a584a643ec0e542b8bf6f042ab5ecc9d2}\label{db_8php_a584a643ec0e542b8bf6f042ab5ecc9d2}} 
+\index{db.php@{db.php}!\$DATABASE\_NAME@{\$DATABASE\_NAME}}
+\index{\$DATABASE\_NAME@{\$DATABASE\_NAME}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{\$DATABASE\_NAME}{$DATABASE\_NAME}}
+{\footnotesize\ttfamily \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{db_8php_ae858da3f69b9d402e0a063e6a7fc2f5b}\label{db_8php_ae858da3f69b9d402e0a063e6a7fc2f5b}} 
+\index{db.php@{db.php}!\$DATABASE\_PASS@{\$DATABASE\_PASS}}
+\index{\$DATABASE\_PASS@{\$DATABASE\_PASS}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{\$DATABASE\_PASS}{$DATABASE\_PASS}}
+{\footnotesize\ttfamily \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+P\+A\+SS = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{db_8php_adfdf4bbc1f8066e64d5e0f5e4eefdc57}\label{db_8php_adfdf4bbc1f8066e64d5e0f5e4eefdc57}} 
+\index{db.php@{db.php}!\$DATABASE\_USER@{\$DATABASE\_USER}}
+\index{\$DATABASE\_USER@{\$DATABASE\_USER}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{\$DATABASE\_USER}{$DATABASE\_USER}}
+{\footnotesize\ttfamily \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+U\+S\+ER = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{db_8php_a5d346e31b75d916e3bac9cb193bfc97f}\label{db_8php_a5d346e31b75d916e3bac9cb193bfc97f}} 
+\index{db.php@{db.php}!\$link@{\$link}}
+\index{\$link@{\$link}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{\$link}{$link}}
+{\footnotesize\ttfamily \$link = htmlspecialchars(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}S\+E\+R\+V\+E\+R\+\_\+\+N\+A\+ME\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{db_8php_a47a1810d664dfc129ff886acdecac31f}\label{db_8php_a47a1810d664dfc129ff886acdecac31f}} 
+\index{db.php@{db.php}!else@{else}}
+\index{else@{else}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}} (strpos( \$link, \char`\"{}toad\char`\"{})) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        \mbox{\hyperlink{db_8php_a9ec944afb63bf131a4cbda887907c836}{\$DATABASE\_HOST}} = \textcolor{stringliteral}{'localhost'}}
+
+\end{DoxyCode}

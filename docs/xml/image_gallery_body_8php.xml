@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="image_gallery_body_8php" kind="file" language="PHP">
+    <compoundname>imageGalleryBody.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="image_gallery_body_8php_1a9590b15215a21e9b42eb546aeef79704" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$files</definition>
+        <argsstring></argsstring>
+        <name>$files</name>
+        <initializer>= scandir($path)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views/imageGalleryBody.php" line="7" column="13" bodyfile="views/imageGalleryBody.php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="image_gallery_body_8php_1affc45c6ace2eeb3f300b054dbf9592b6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$values</definition>
+        <argsstring></argsstring>
+        <name>$values</name>
+        <initializer>= array_values($files)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views/imageGalleryBody.php" line="8" column="13" bodyfile="views/imageGalleryBody.php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$images</definition>
+        <argsstring></argsstring>
+        <name>$images</name>
+        <initializer>= &quot;[&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views/imageGalleryBody.php" line="9" column="13" bodyfile="views/imageGalleryBody.php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="image_gallery_body_8php_1a895c3f7745f63127fdb805d77b2be73b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>foreach($values as $file)</definition>
+        <argsstring>( $values as $file)</argsstring>
+        <name>foreach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views/imageGalleryBody.php" line="10" column="13" bodyfile="views/imageGalleryBody.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="image_gallery_body_8php_1ac2040b96cd66d4d79b1d9fe0027d2f9b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$end</definition>
+        <argsstring></argsstring>
+        <name>$end</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views/imageGalleryBody.php" line="33" column="13" bodyfile="views/imageGalleryBody.php" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;content&quot;<sp/>style=&quot;padding-left:16px&quot;&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;row&quot;&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="image_gallery_body_8php_1a9590b15215a21e9b42eb546aeef79704" kindref="member">$files</ref><sp/>=<sp/>scandir(<ref refid="get_images_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kindref="member">$path</ref>);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="image_gallery_body_8php_1affc45c6ace2eeb3f300b054dbf9592b6" kindref="member">$values</ref><sp/>=<sp/>array_values(<ref refid="image_gallery_body_8php_1a9590b15215a21e9b42eb546aeef79704" kindref="member">$files</ref>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" kindref="member">$images</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="image_gallery_body_8php_1affc45c6ace2eeb3f300b054dbf9592b6" kindref="member">$values</ref><sp/>as<sp/>$file)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($file<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$file<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;..&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" kindref="member">$images</ref><sp/>=<sp/><ref refid="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" kindref="member">$images</ref>.<sp/><ref refid="fanart_8php_1a0c8290c5518daf3c5249c91d22155b41" kindref="member">$javascriptPath</ref>.</highlight><highlight class="stringliteral">&quot;<sp/>+<sp/>&apos;&quot;</highlight><highlight class="normal">.$file.</highlight><highlight class="stringliteral">&quot;&apos;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$image<sp/>=<sp/><ref refid="fanart_8php_1a0c8290c5518daf3c5249c91d22155b41" kindref="member">$javascriptPath</ref>.$file.</highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&apos;container&apos;&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;img<sp/>onclick=&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;&apos;newMainImg(&quot;</highlight><highlight class="normal">.$image.</highlight><highlight class="stringliteral">&quot;)&apos;<sp/>src=<sp/>&quot;</highlight><highlight class="normal">.$image.</highlight><highlight class="stringliteral">&apos;/&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;p&gt;&apos;</highlight><highlight class="normal">.substr($file,<sp/>5<sp/>,<sp/>-4).</highlight><highlight class="stringliteral">&apos;&lt;/p&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;overlay&quot;&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;img<sp/>id<sp/>=<sp/>&quot;mainImg&quot;<sp/>src<sp/>=<sp/>&quot;/~levymaty/assets/myArt/03<sp/>-<sp/>A<sp/>date<sp/>with<sp/>a<sp/>cat<sp/>03.png&quot;&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;gallery&quot;<sp/>class=&quot;gallery&quot;&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" kindref="member">$images</ref><sp/>=<sp/>substr(<ref refid="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" kindref="member">$images</ref>,<sp/>0,<sp/>-1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" kindref="member">$images</ref><sp/>=<sp/><ref refid="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" kindref="member">$images</ref>.</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="image_gallery_body_8php_1ac2040b96cd66d4d79b1d9fe0027d2f9b" kindref="member">$end</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(count(<ref refid="image_gallery_body_8php_1a9590b15215a21e9b42eb546aeef79704" kindref="member">$files</ref>,0)<sp/>&gt;<sp/>5){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>($i<sp/>=<sp/>0;<sp/>$i<sp/>&lt;<sp/><ref refid="image_gallery_body_8php_1ac2040b96cd66d4d79b1d9fe0027d2f9b" kindref="member">$end</ref>;<sp/>$i++)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="image_gallery_body_8php_1affc45c6ace2eeb3f300b054dbf9592b6" kindref="member">$values</ref>[$i]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>||<sp/><ref refid="image_gallery_body_8php_1affc45c6ace2eeb3f300b054dbf9592b6" kindref="member">$values</ref>[$i]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;..&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="image_gallery_body_8php_1ac2040b96cd66d4d79b1d9fe0027d2f9b" kindref="member">$end</ref>++;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;img<sp/>id<sp/>=<sp/>&quot;&apos;</highlight><highlight class="normal">.$i.</highlight><highlight class="stringliteral">&apos;&quot;<sp/>class=&quot;galleryImg&quot;<sp/>src=&quot;/~levymaty/assets/myArt/&apos;</highlight><highlight class="normal">.<ref refid="image_gallery_body_8php_1affc45c6ace2eeb3f300b054dbf9592b6" kindref="member">$values</ref>[$i].</highlight><highlight class="stringliteral">&apos;&quot;<sp/>alt=&quot;sometext&quot;<sp/>onclick=&quot;newMainImg(&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;&apos;/~levymaty/assets/myArt/&quot;</highlight><highlight class="normal">.$values[$i].</highlight><highlight class="stringliteral">&quot;&apos;)&quot;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&apos;&quot;/&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elseif<sp/>(count(<ref refid="image_gallery_body_8php_1a9590b15215a21e9b42eb546aeef79704" kindref="member">$files</ref>,0)<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="image_gallery_body_8php_1a9590b15215a21e9b42eb546aeef79704" kindref="member">$files</ref><sp/>as<sp/>$file)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($file<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>$file<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;..&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;img<sp/>class=&quot;galleryImg&quot;<sp/>src=&quot;/~levymaty/assets/myArt/&apos;</highlight><highlight class="normal">.$file.</highlight><highlight class="stringliteral">&apos;&quot;<sp/>alt=&quot;sometext&quot;<sp/>onclick=&quot;newMainImg(&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;&apos;/~levymaty/assets/myArt/&quot;</highlight><highlight class="normal">.$file.</highlight><highlight class="stringliteral">&quot;&apos;)&quot;</highlight><highlight class="normal">.</highlight><highlight class="stringliteral">&apos;&quot;/&gt;</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="65"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?&gt;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="views/imageGalleryBody.php"/>
+  </compounddef>
+</doxygen>

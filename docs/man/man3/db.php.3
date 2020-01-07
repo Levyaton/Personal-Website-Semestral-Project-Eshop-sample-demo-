@@ -1,0 +1,57 @@
+.TH "models/db.php" 3 "Tue Jan 7 2020" "Version 1.0" "Personal Blog" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+models/db.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$DATABASE_HOST\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_USER\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_PASS\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_NAME\fP = ''"
+.br
+.ti -1c
+.RI "\fB$link\fP = htmlspecialchars($_SERVER['SERVER_NAME'])"
+.br
+.ti -1c
+.RI "\fBif\fP(strpos($link, 'toad')) \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$con\fP = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME)"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME)"
+
+.SS "$DATABASE_HOST = ''"
+
+.SS "$DATABASE_NAME = ''"
+
+.SS "$DATABASE_PASS = ''"
+
+.SS "$DATABASE_USER = ''"
+
+.SS "$link = htmlspecialchars($_SERVER['SERVER_NAME'])"
+
+.SS "\fBif\fP (strpos( $link, 'toad')) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $DATABASE_HOST = 'localhost'
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Personal Blog from the source code\&.

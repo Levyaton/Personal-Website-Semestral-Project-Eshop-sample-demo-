@@ -1,0 +1,67 @@
+.TH "api/storeImg.php" 3 "Tue Jan 7 2020" "Version 1.0" "Personal Blog" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+api/storeImg.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$path\fP =__DIR__ \&. '/\&.\&.'\&. '/assets/fanart'"
+.br
+.ti -1c
+.RI "\fB$imageFile\fP = $_FILES['imgFile']['name']"
+.br
+.ti -1c
+.RI "\fB$tens\fP = 0"
+.br
+.ti -1c
+.RI "\fB$singles\fP = 2"
+.br
+.ti -1c
+.RI "\fBif\fP($handle=opendir($path)) \fB$info\fP = pathinfo($imageFile)"
+.br
+.ti -1c
+.RI "\fB$ext\fP = $info['extension']"
+.br
+.ti -1c
+.RI "\fB$newFileName\fP = '01 \- '\&.htmlspecialchars($_SESSION['name'])\&.' \- '\&.htmlspecialchars($_POST['fname'])\&.'\&.'\&.htmlspecialchars($ext)"
+.br
+.ti -1c
+.RI "\fBif\fP(move_uploaded_file( $_FILES['imgFile']['tmp_name'], $path\&.'/'\&. $newFileName)) \fBelse\fP"
+.br
+.ti -1c
+.RI "switch($_FILES[0]['error']) \fB$link\fP = htmlspecialchars($_POST['link'])"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$ext = $info['extension']"
+
+.SS "$imageFile = $_FILES['imgFile']['name']"
+
+.SS "\fBif\fP ( $handle=opendir( $path)) $info = pathinfo($imageFile)"
+
+.SS "switch ( $_FILES[0][ 'error']) $link = htmlspecialchars($_POST['link'])"
+
+.SS "$newFileName = '01 \- '\&.htmlspecialchars($_SESSION['name'])\&.' \- '\&.htmlspecialchars($_POST['fname'])\&.'\&.'\&.htmlspecialchars($ext)"
+
+.SS "$path =__DIR__ \&. '/\&.\&.'\&. '/assets/fanart'"
+
+.SS "$singles = 2"
+
+.SS "$tens = 0"
+
+.SS "\fBif\fP (move_uploaded_file($_FILES[ 'imgFile'][ 'tmp_name'], $path\&.'/'\&. $newFileName)) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $html_body = '<h1>File upload error!</h1>'
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Personal Blog from the source code\&.

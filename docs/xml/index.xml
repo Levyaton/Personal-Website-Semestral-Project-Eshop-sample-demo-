@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="authenticate_8php" kind="file"><name>authenticate.php</name>
+    <member refid="authenticate_8php_1a3c7d69871cf96b0835372fc20e7a984c" kind="variable"><name>else</name></member>
+    <member refid="authenticate_8php_1aa71c8f87b1c0f5b99ebff446cdb2e8f1" kind="variable"><name>if</name></member>
+    <member refid="authenticate_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kind="variable"><name>$link</name></member>
+  </compound>
+  <compound refid="change_theme_8php" kind="file"><name>changeTheme.php</name>
+    <member refid="change_theme_8php_1a9ec944afb63bf131a4cbda887907c836" kind="variable"><name>$DATABASE_HOST</name></member>
+    <member refid="change_theme_8php_1adfdf4bbc1f8066e64d5e0f5e4eefdc57" kind="variable"><name>$DATABASE_USER</name></member>
+    <member refid="change_theme_8php_1ae858da3f69b9d402e0a063e6a7fc2f5b" kind="variable"><name>$DATABASE_PASS</name></member>
+    <member refid="change_theme_8php_1a584a643ec0e542b8bf6f042ab5ecc9d2" kind="variable"><name>$DATABASE_NAME</name></member>
+    <member refid="change_theme_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kind="variable"><name>$link</name></member>
+    <member refid="change_theme_8php_1a5894a8dcaeff5a403c5ad8a6d070be41" kind="variable"><name>else</name></member>
+    <member refid="change_theme_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kind="variable"><name>$conn</name></member>
+    <member refid="change_theme_8php_1a4b685878caa7661f403fe48c248a8cc0" kind="variable"><name>$username</name></member>
+    <member refid="change_theme_8php_1aa13d24df9dd0d529ade5187cef7086a1" kind="variable"><name>$chosenTheme</name></member>
+    <member refid="change_theme_8php_1ad496e3a0b7350f301b0be42416f78cd4" kind="variable"><name>$sql</name></member>
+  </compound>
+  <compound refid="get_images_8php" kind="file"><name>getImages.php</name>
+    <member refid="get_images_8php_1abb35c8495a232b510389fa6d7b15d38a" kind="variable"><name>$request</name></member>
+    <member refid="get_images_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kind="variable"><name>$path</name></member>
+    <member refid="get_images_8php_1a9590b15215a21e9b42eb546aeef79704" kind="variable"><name>$files</name></member>
+    <member refid="get_images_8php_1a112ef069ddc0454086e3d1e6d8d55d07" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="logout_8php" kind="file"><name>logout.php</name>
+    <member refid="logout_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kind="variable"><name>$link</name></member>
+  </compound>
+  <compound refid="register__user_8php" kind="file"><name>register_user.php</name>
+    <member refid="register__user_8php_1a9ec944afb63bf131a4cbda887907c836" kind="variable"><name>$DATABASE_HOST</name></member>
+    <member refid="register__user_8php_1adfdf4bbc1f8066e64d5e0f5e4eefdc57" kind="variable"><name>$DATABASE_USER</name></member>
+    <member refid="register__user_8php_1ae858da3f69b9d402e0a063e6a7fc2f5b" kind="variable"><name>$DATABASE_PASS</name></member>
+    <member refid="register__user_8php_1a584a643ec0e542b8bf6f042ab5ecc9d2" kind="variable"><name>$DATABASE_NAME</name></member>
+    <member refid="register__user_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kind="variable"><name>$link</name></member>
+    <member refid="register__user_8php_1a3b1f76dd64cdf648f98c5ef7f6c094b1" kind="variable"><name>$goTo</name></member>
+    <member refid="register__user_8php_1a5894a8dcaeff5a403c5ad8a6d070be41" kind="variable"><name>else</name></member>
+    <member refid="register__user_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kind="variable"><name>$conn</name></member>
+    <member refid="register__user_8php_1aa8d043db9d292d29cb663e554d3f0ffc" kind="variable"><name>$USERNAME</name></member>
+    <member refid="register__user_8php_1a2b09b1c2c22822d20c76e6bc0a008904" kind="variable"><name>$passwordFromPost</name></member>
+    <member refid="register__user_8php_1ac6c166cb90c97e799a631c6cc894d841" kind="variable"><name>$PASS</name></member>
+    <member refid="register__user_8php_1a47bae00d656c37ccabf3f0a6e8ca39ec" kind="variable"><name>$EMAIL</name></member>
+    <member refid="register__user_8php_1a047170d6020a882807665812a27e2525" kind="variable"><name>$sql</name></member>
+  </compound>
+  <compound refid="store_img_8php" kind="file"><name>storeImg.php</name>
+    <member refid="store_img_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kind="variable"><name>$path</name></member>
+    <member refid="store_img_8php_1aeb96e374aacd06d08aface11e795af74" kind="variable"><name>$imageFile</name></member>
+    <member refid="store_img_8php_1afd55e093dd1478e54b5632a9e377f3c1" kind="variable"><name>$tens</name></member>
+    <member refid="store_img_8php_1a1787ded40964abde6b6dc06b4a7520bc" kind="variable"><name>$singles</name></member>
+    <member refid="store_img_8php_1aa7ea90d25629c5f1e9d94db17a6a06c4" kind="variable"><name>$info</name></member>
+    <member refid="store_img_8php_1ade30ae71930839daaf6f83bd19081493" kind="variable"><name>$ext</name></member>
+    <member refid="store_img_8php_1a7c759b3c1beff3261552e9f9e57daefd" kind="variable"><name>$newFileName</name></member>
+    <member refid="store_img_8php_1a4620f939333e5996b5af3d248fe59ddb" kind="variable"><name>else</name></member>
+    <member refid="store_img_8php_1a7042daaf0f35154234de1de0928071e1" kind="variable"><name>$link</name></member>
+  </compound>
+  <compound refid="index_8php" kind="file"><name>index.php</name>
+  </compound>
+  <compound refid="db_8php" kind="file"><name>db.php</name>
+    <member refid="db_8php_1a9ec944afb63bf131a4cbda887907c836" kind="variable"><name>$DATABASE_HOST</name></member>
+    <member refid="db_8php_1adfdf4bbc1f8066e64d5e0f5e4eefdc57" kind="variable"><name>$DATABASE_USER</name></member>
+    <member refid="db_8php_1ae858da3f69b9d402e0a063e6a7fc2f5b" kind="variable"><name>$DATABASE_PASS</name></member>
+    <member refid="db_8php_1a584a643ec0e542b8bf6f042ab5ecc9d2" kind="variable"><name>$DATABASE_NAME</name></member>
+    <member refid="db_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kind="variable"><name>$link</name></member>
+    <member refid="db_8php_1a47a1810d664dfc129ff886acdecac31f" kind="variable"><name>else</name></member>
+    <member refid="db_8php_1a0debe10448ec56a57b5509648408a549" kind="variable"><name>$con</name></member>
+  </compound>
+  <compound refid="db_base_8php" kind="file"><name>dbBase.php</name>
+    <member refid="db_base_8php_1a9ec944afb63bf131a4cbda887907c836" kind="variable"><name>$DATABASE_HOST</name></member>
+    <member refid="db_base_8php_1adfdf4bbc1f8066e64d5e0f5e4eefdc57" kind="variable"><name>$DATABASE_USER</name></member>
+    <member refid="db_base_8php_1ae858da3f69b9d402e0a063e6a7fc2f5b" kind="variable"><name>$DATABASE_PASS</name></member>
+    <member refid="db_base_8php_1a584a643ec0e542b8bf6f042ab5ecc9d2" kind="variable"><name>$DATABASE_NAME</name></member>
+    <member refid="db_base_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kind="variable"><name>$link</name></member>
+    <member refid="db_base_8php_1a47a1810d664dfc129ff886acdecac31f" kind="variable"><name>else</name></member>
+  </compound>
+  <compound refid="about_8php" kind="file"><name>about.php</name>
+  </compound>
+  <compound refid="contact_8php" kind="file"><name>contact.php</name>
+  </compound>
+  <compound refid="fanart_8php" kind="file"><name>fanart.php</name>
+    <member refid="fanart_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kind="variable"><name>$path</name></member>
+    <member refid="fanart_8php_1a0c8290c5518daf3c5249c91d22155b41" kind="variable"><name>$javascriptPath</name></member>
+    <member refid="fanart_8php_1a9fd3cb77418876e48e2bccf7d5f77ba6" kind="variable"><name>if</name></member>
+  </compound>
+  <compound refid="form_box_8php" kind="file"><name>formBox.php</name>
+  </compound>
+  <compound refid="gallery-gallery_8php" kind="file"><name>gallery-gallery.php</name>
+  </compound>
+  <compound refid="gallery-stories_8php" kind="file"><name>gallery-stories.php</name>
+  </compound>
+  <compound refid="gallery_8php" kind="file"><name>gallery.php</name>
+  </compound>
+  <compound refid="git_8php" kind="file"><name>git.php</name>
+  </compound>
+  <compound refid="homepage_8php" kind="file"><name>homepage.php</name>
+  </compound>
+  <compound refid="image_gallery_body_8php" kind="file"><name>imageGalleryBody.php</name>
+    <member refid="image_gallery_body_8php_1a9590b15215a21e9b42eb546aeef79704" kind="variable"><name>$files</name></member>
+    <member refid="image_gallery_body_8php_1affc45c6ace2eeb3f300b054dbf9592b6" kind="variable"><name>$values</name></member>
+    <member refid="image_gallery_body_8php_1ab0c7013419fc5ee6238d17eff2554afe" kind="variable"><name>$images</name></member>
+    <member refid="image_gallery_body_8php_1a895c3f7745f63127fdb805d77b2be73b" kind="variable"><name>foreach</name></member>
+    <member refid="image_gallery_body_8php_1ac2040b96cd66d4d79b1d9fe0027d2f9b" kind="variable"><name>$end</name></member>
+  </compound>
+  <compound refid="image_gallery_script_8php" kind="file"><name>imageGalleryScript.php</name>
+    <member refid="image_gallery_script_8php_1a9590b15215a21e9b42eb546aeef79704" kind="variable"><name>$files</name></member>
+    <member refid="image_gallery_script_8php_1a112ef069ddc0454086e3d1e6d8d55d07" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="image_generator_8php" kind="file"><name>imageGenerator.php</name>
+    <member refid="image_generator_8php_1a055d8541b4d5221fa4dbde688ca248cd" kind="function"><name>getImagesFromFolder</name></member>
+  </compound>
+  <compound refid="image_upload_8php" kind="file"><name>imageUpload.php</name>
+  </compound>
+  <compound refid="login_8php" kind="file"><name>login.php</name>
+    <member refid="login_8php_1aeab12670c2eaa44ad195b4a8c5222c2f" kind="variable"><name>else</name></member>
+  </compound>
+  <compound refid="my_art_8php" kind="file"><name>myArt.php</name>
+    <member refid="my_art_8php_1a0a4baf0b22973c07685c3981f0d17fc4" kind="variable"><name>$path</name></member>
+    <member refid="my_art_8php_1a0c8290c5518daf3c5249c91d22155b41" kind="variable"><name>$javascriptPath</name></member>
+  </compound>
+  <compound refid="navbar_8php" kind="file"><name>navbar.php</name>
+    <member refid="navbar_8php_1a1cf57b50fc8c2020be3717682ee8e1f8" kind="variable"><name>else</name></member>
+  </compound>
+  <compound refid="register_8php" kind="file"><name>register.php</name>
+  </compound>
+  <compound refid="upload_button_8php" kind="file"><name>uploadButton.php</name>
+  </compound>
+  <compound refid="videos_8php" kind="file"><name>videos.php</name>
+  </compound>
+  <compound refid="whats__new_8php" kind="file"><name>whats_new.php</name>
+  </compound>
+  <compound refid="dir_0188a3e6da905bc60aceb35bf790b8c9" kind="dir"><name>api</name>
+  </compound>
+  <compound refid="dir_1ae4179d5e953611aae20c997279e02c" kind="dir"><name>models</name>
+  </compound>
+  <compound refid="dir_810e6677597a758262d47477e73b118d" kind="dir"><name>views</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,93 @@
+.TH "api/register_user.php" 3 "Tue Jan 7 2020" "Version 1.0" "Personal Blog" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+api/register_user.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$DATABASE_HOST\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_USER\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_PASS\fP = ''"
+.br
+.ti -1c
+.RI "\fB$DATABASE_NAME\fP = ''"
+.br
+.ti -1c
+.RI "\fB$link\fP = htmlspecialchars($_SERVER['SERVER_NAME'])"
+.br
+.ti -1c
+.RI "\fB$goTo\fP = 'http://'\&.htmlspecialchars($_SERVER['SERVER_NAME'])\&.'/~levymaty/'"
+.br
+.ti -1c
+.RI "\fBif\fP(strpos($link, 'toad')) \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$conn\fP = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME)"
+.br
+.ti -1c
+.RI "\fB$USERNAME\fP = htmlspecialchars($_POST['username'])"
+.br
+.ti -1c
+.RI "\fB$passwordFromPost\fP = htmlspecialchars($_POST['password'])"
+.br
+.ti -1c
+.RI "\fB$PASS\fP"
+.br
+.ti -1c
+.RI "\fB$EMAIL\fP = htmlspecialchars($_POST['email'])"
+.br
+.ti -1c
+.RI "\fB$sql\fP = 'INSERT INTO users (username, password, email) VALUES ('$USERNAME', '$PASS', '$EMAIL')'"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME)"
+
+.SS "$DATABASE_HOST = ''"
+
+.SS "$DATABASE_NAME = ''"
+
+.SS "$DATABASE_PASS = ''"
+
+.SS "$DATABASE_USER = ''"
+
+.SS "$EMAIL = htmlspecialchars($_POST['email'])"
+
+.SS "$goTo = 'http://'\&.htmlspecialchars($_SERVER['SERVER_NAME'])\&.'/~levymaty/'"
+
+.SS "$link = htmlspecialchars($_SERVER['SERVER_NAME'])"
+
+.SS "$PASS"
+\fBInitial value:\fP
+.PP
+.nf
+= password_hash($passwordFromPost, PASSWORD_BCRYPT, [
+        'cost' => 11,
+    ])
+.fi
+.SS "$passwordFromPost = htmlspecialchars($_POST['password'])"
+
+.SS "$sql = 'INSERT INTO users (username, password, email) VALUES ('$USERNAME', '$PASS', '$EMAIL')'"
+
+.SS "$USERNAME = htmlspecialchars($_POST['username'])"
+
+.SS "\fBif\fP ( $conn\->query( $sql)===TRUE) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+    $DATABASE_HOST = 'localhost'
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Personal Blog from the source code\&.

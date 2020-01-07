@@ -1,0 +1,33 @@
+.TH "views/login.php" 3 "Tue Jan 7 2020" "Version 1.0" "Personal Blog" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+views/login.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBif\fP(isSet($_SESSION['loggedin'])) \fBelse\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "\fBif\fP (isSet( $_SESSION['loggedin'])) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+                echo '
+                <form id = "login" action="/~levymaty/api/authenticate\&.php" method="post">
+                    <input type="text" name="username" placeholder="Username" id="username" required>
+                    <input type="password" name="password" placeholder="Password" id="password" required>
+                    <input type="submit" value="Login">
+                </form>
+                '
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Personal Blog from the source code\&.

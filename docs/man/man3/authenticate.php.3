@@ -1,0 +1,42 @@
+.TH "api/authenticate.php" 3 "Tue Jan 7 2020" "Version 1.0" "Personal Blog" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+api/authenticate.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBif\fP(!isset($_POST['username'], $_POST['password'])) if($stmt=$con\->prepare('SELECT id, password, theme FROM users WHERE username=?')) \fBif\fP($stmt\->num_rows > 0) \fBelse\fP"
+.br
+.ti -1c
+.RI "\fBif\fP ( $stmt=$con\->prepare( 'SELECT id, password, username, theme FROM users WHERE email=?'))"
+.br
+.ti -1c
+.RI "\fB$link\fP = htmlspecialchars($_POST['link'])"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$link = htmlspecialchars($_POST['link'])"
+
+.SS "\fBif\fP ( $stmt\->num_rows > 0) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+    echo 'Incorrect username!'
+.fi
+.SS "if"
+\fBInitial value:\fP
+.PP
+.nf
+{
+    echo 'Incorrect username!'
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Personal Blog from the source code\&.

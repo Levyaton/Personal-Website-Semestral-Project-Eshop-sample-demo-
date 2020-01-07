@@ -1,0 +1,86 @@
+\hypertarget{store_img_8php}{}\doxysection{api/store\+Img.php File Reference}
+\label{store_img_8php}\index{api/storeImg.php@{api/storeImg.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{store_img_8php_a0a4baf0b22973c07685c3981f0d17fc4}{\$path}} =\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+ . \textquotesingle{}/..\textquotesingle{}. \textquotesingle{}/assets/fanart\textquotesingle{}
+\item 
+\mbox{\hyperlink{store_img_8php_aeb96e374aacd06d08aface11e795af74}{\$image\+File}} = \$\+\_\+\+F\+I\+L\+ES\mbox{[}\textquotesingle{}img\+File\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}name\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{store_img_8php_afd55e093dd1478e54b5632a9e377f3c1}{\$tens}} = 0
+\item 
+\mbox{\hyperlink{store_img_8php_a1787ded40964abde6b6dc06b4a7520bc}{\$singles}} = 2
+\item 
+\mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}}(\$handle=opendir(\$path)) \mbox{\hyperlink{store_img_8php_aa7ea90d25629c5f1e9d94db17a6a06c4}{\$info}} = pathinfo(\$image\+File)
+\item 
+\mbox{\hyperlink{store_img_8php_ade30ae71930839daaf6f83bd19081493}{\$ext}} = \$info\mbox{[}\textquotesingle{}extension\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{store_img_8php_a7c759b3c1beff3261552e9f9e57daefd}{\$new\+File\+Name}} = \char`\"{}01 -\/ \char`\"{}.htmlspecialchars(\$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}name\char`\"{}\mbox{]}).\char`\"{} -\/ \char`\"{}.htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}fname\char`\"{}\mbox{]}).\char`\"{}.\char`\"{}.htmlspecialchars(\$ext)
+\item 
+\mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}}(move\+\_\+uploaded\+\_\+file( \$\+\_\+\+F\+I\+L\+ES\mbox{[}\textquotesingle{}img\+File\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}tmp\+\_\+name\textquotesingle{}\mbox{]}, \$path.\char`\"{}/\char`\"{}. \$new\+File\+Name)) \mbox{\hyperlink{store_img_8php_a4620f939333e5996b5af3d248fe59ddb}{else}}
+\item 
+switch(\$\+\_\+\+F\+I\+L\+ES\mbox{[}0\mbox{]}\mbox{[}\textquotesingle{}error\textquotesingle{}\mbox{]}) \mbox{\hyperlink{store_img_8php_a7042daaf0f35154234de1de0928071e1}{\$link}} = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}link\char`\"{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{store_img_8php_ade30ae71930839daaf6f83bd19081493}\label{store_img_8php_ade30ae71930839daaf6f83bd19081493}} 
+\index{storeImg.php@{storeImg.php}!\$ext@{\$ext}}
+\index{\$ext@{\$ext}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{\$ext}{$ext}}
+{\footnotesize\ttfamily \$ext = \$info\mbox{[}\textquotesingle{}extension\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{store_img_8php_aeb96e374aacd06d08aface11e795af74}\label{store_img_8php_aeb96e374aacd06d08aface11e795af74}} 
+\index{storeImg.php@{storeImg.php}!\$imageFile@{\$imageFile}}
+\index{\$imageFile@{\$imageFile}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{\$imageFile}{$imageFile}}
+{\footnotesize\ttfamily \$image\+File = \$\+\_\+\+F\+I\+L\+ES\mbox{[}\textquotesingle{}img\+File\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}name\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{store_img_8php_aa7ea90d25629c5f1e9d94db17a6a06c4}\label{store_img_8php_aa7ea90d25629c5f1e9d94db17a6a06c4}} 
+\index{storeImg.php@{storeImg.php}!\$info@{\$info}}
+\index{\$info@{\$info}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{\$info}{$info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}} ( \$handle=opendir( \$path)) \$info = pathinfo(\$image\+File)}
+
+\mbox{\Hypertarget{store_img_8php_a7042daaf0f35154234de1de0928071e1}\label{store_img_8php_a7042daaf0f35154234de1de0928071e1}} 
+\index{storeImg.php@{storeImg.php}!\$link@{\$link}}
+\index{\$link@{\$link}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{\$link}{$link}}
+{\footnotesize\ttfamily switch ( \$\+\_\+\+F\+I\+L\+ES\mbox{[}0\mbox{]}\mbox{[} \textquotesingle{}error\textquotesingle{}\mbox{]}) \$link = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}link\char`\"{}\mbox{]})}
+
+\mbox{\Hypertarget{store_img_8php_a7c759b3c1beff3261552e9f9e57daefd}\label{store_img_8php_a7c759b3c1beff3261552e9f9e57daefd}} 
+\index{storeImg.php@{storeImg.php}!\$newFileName@{\$newFileName}}
+\index{\$newFileName@{\$newFileName}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{\$newFileName}{$newFileName}}
+{\footnotesize\ttfamily \$new\+File\+Name = \char`\"{}01 -\/ \char`\"{}.htmlspecialchars(\$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}name\char`\"{}\mbox{]}).\char`\"{} -\/ \char`\"{}.htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}fname\char`\"{}\mbox{]}).\char`\"{}.\char`\"{}.htmlspecialchars(\$ext)}
+
+\mbox{\Hypertarget{store_img_8php_a0a4baf0b22973c07685c3981f0d17fc4}\label{store_img_8php_a0a4baf0b22973c07685c3981f0d17fc4}} 
+\index{storeImg.php@{storeImg.php}!\$path@{\$path}}
+\index{\$path@{\$path}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{\$path}{$path}}
+{\footnotesize\ttfamily \$path =\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+ . \textquotesingle{}/..\textquotesingle{}. \textquotesingle{}/assets/fanart\textquotesingle{}}
+
+\mbox{\Hypertarget{store_img_8php_a1787ded40964abde6b6dc06b4a7520bc}\label{store_img_8php_a1787ded40964abde6b6dc06b4a7520bc}} 
+\index{storeImg.php@{storeImg.php}!\$singles@{\$singles}}
+\index{\$singles@{\$singles}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{\$singles}{$singles}}
+{\footnotesize\ttfamily \$singles = 2}
+
+\mbox{\Hypertarget{store_img_8php_afd55e093dd1478e54b5632a9e377f3c1}\label{store_img_8php_afd55e093dd1478e54b5632a9e377f3c1}} 
+\index{storeImg.php@{storeImg.php}!\$tens@{\$tens}}
+\index{\$tens@{\$tens}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{\$tens}{$tens}}
+{\footnotesize\ttfamily \$tens = 0}
+
+\mbox{\Hypertarget{store_img_8php_a4620f939333e5996b5af3d248fe59ddb}\label{store_img_8php_a4620f939333e5996b5af3d248fe59ddb}} 
+\index{storeImg.php@{storeImg.php}!else@{else}}
+\index{else@{else}!storeImg.php@{storeImg.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}} (move\+\_\+uploaded\+\_\+file(\$\+\_\+\+F\+I\+L\+ES\mbox{[} \textquotesingle{}img\+File\textquotesingle{}\mbox{]}\mbox{[} \textquotesingle{}tmp\+\_\+name\textquotesingle{}\mbox{]}, \$path.\char`\"{}/\char`\"{}. \$new\+File\+Name)) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        \$html\_body = \textcolor{stringliteral}{'<h1>File upload error!</h1>'}}
+
+\end{DoxyCode}

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="db_base_8php" kind="file" language="PHP">
+    <compoundname>dbBase.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="db_base_8php_1a9ec944afb63bf131a4cbda887907c836" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$DATABASE_HOST</definition>
+        <argsstring></argsstring>
+        <name>$DATABASE_HOST</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/dbBase.php" line="2" column="1" bodyfile="models/dbBase.php" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db_base_8php_1adfdf4bbc1f8066e64d5e0f5e4eefdc57" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$DATABASE_USER</definition>
+        <argsstring></argsstring>
+        <name>$DATABASE_USER</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/dbBase.php" line="3" column="1" bodyfile="models/dbBase.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db_base_8php_1ae858da3f69b9d402e0a063e6a7fc2f5b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$DATABASE_PASS</definition>
+        <argsstring></argsstring>
+        <name>$DATABASE_PASS</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/dbBase.php" line="4" column="1" bodyfile="models/dbBase.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db_base_8php_1a584a643ec0e542b8bf6f042ab5ecc9d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$DATABASE_NAME</definition>
+        <argsstring></argsstring>
+        <name>$DATABASE_NAME</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/dbBase.php" line="5" column="1" bodyfile="models/dbBase.php" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db_base_8php_1a5d346e31b75d916e3bac9cb193bfc97f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$link</definition>
+        <argsstring></argsstring>
+        <name>$link</name>
+        <initializer>= htmlspecialchars($_SERVER[&apos;REQUEST_URI&apos;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/dbBase.php" line="7" column="1" bodyfile="models/dbBase.php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db_base_8php_1a47a1810d664dfc129ff886acdecac31f" prot="public" static="no" mutable="no">
+        <type><ref refid="fanart_8php_1a9fd3cb77418876e48e2bccf7d5f77ba6" kindref="member">if</ref>(strpos($link, &quot;toad&quot;))</type>
+        <definition>if (strpos( $link, &quot;toad&quot;)) else</definition>
+        <argsstring></argsstring>
+        <name>else</name>
+        <initializer>{
+    $DATABASE_HOST = &apos;localhost&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/dbBase.php" line="14" column="1" bodyfile="models/dbBase.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><ref refid="db_base_8php_1a9ec944afb63bf131a4cbda887907c836" kindref="member">$DATABASE_HOST</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="db_base_8php_1adfdf4bbc1f8066e64d5e0f5e4eefdc57" kindref="member">$DATABASE_USER</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="db_base_8php_1ae858da3f69b9d402e0a063e6a7fc2f5b" kindref="member">$DATABASE_PASS</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="db_base_8php_1a584a643ec0e542b8bf6f042ab5ecc9d2" kindref="member">$DATABASE_NAME</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="db_base_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kindref="member">$link</ref><sp/>=<sp/>htmlspecialchars($_SERVER[</highlight><highlight class="stringliteral">&apos;REQUEST_URI&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strpos(<ref refid="db_base_8php_1a5d346e31b75d916e3bac9cb193bfc97f" kindref="member">$link</ref>,<sp/></highlight><highlight class="stringliteral">&quot;toad&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db_base_8php_1a9ec944afb63bf131a4cbda887907c836" kindref="member">$DATABASE_HOST</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;127.0.0.1&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db_base_8php_1adfdf4bbc1f8066e64d5e0f5e4eefdc57" kindref="member">$DATABASE_USER</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;levymaty&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db_base_8php_1ae858da3f69b9d402e0a063e6a7fc2f5b" kindref="member">$DATABASE_PASS</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;webove<sp/>aplikace&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db_base_8php_1a584a643ec0e542b8bf6f042ab5ecc9d2" kindref="member">$DATABASE_NAME</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;levymaty&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db_base_8php_1a9ec944afb63bf131a4cbda887907c836" kindref="member">$DATABASE_HOST</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;localhost&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db_base_8php_1adfdf4bbc1f8066e64d5e0f5e4eefdc57" kindref="member">$DATABASE_USER</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;root&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db_base_8php_1ae858da3f69b9d402e0a063e6a7fc2f5b" kindref="member">$DATABASE_PASS</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db_base_8php_1a584a643ec0e542b8bf6f042ab5ecc9d2" kindref="member">$DATABASE_NAME</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;userlist&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="models/dbBase.php"/>
+  </compounddef>
+</doxygen>

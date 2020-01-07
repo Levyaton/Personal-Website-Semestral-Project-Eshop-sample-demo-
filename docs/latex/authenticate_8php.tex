@@ -1,0 +1,44 @@
+\hypertarget{authenticate_8php}{}\doxysection{api/authenticate.php File Reference}
+\label{authenticate_8php}\index{api/authenticate.php@{api/authenticate.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}}(!isset(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}username\char`\"{}\mbox{]}, \$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}password\char`\"{}\mbox{]})) if(\$stmt=\$con-\/$>$prepare(\textquotesingle{}S\+E\+L\+E\+CT id, password, theme F\+R\+OM users W\+H\+E\+RE username=?\textquotesingle{})) \mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}}(\$stmt-\/$>$num\+\_\+rows $>$ 0) \mbox{\hyperlink{authenticate_8php_a3c7d69871cf96b0835372fc20e7a984c}{else}}
+\item 
+\mbox{\hyperlink{authenticate_8php_aa71c8f87b1c0f5b99ebff446cdb2e8f1}{if}} ( \$stmt=\$con-\/$>$prepare( \textquotesingle{}S\+E\+L\+E\+CT id, password, username, theme F\+R\+OM users W\+H\+E\+RE email=?\textquotesingle{}))
+\item 
+\mbox{\hyperlink{authenticate_8php_a5d346e31b75d916e3bac9cb193bfc97f}{\$link}} = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}link\char`\"{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{authenticate_8php_a5d346e31b75d916e3bac9cb193bfc97f}\label{authenticate_8php_a5d346e31b75d916e3bac9cb193bfc97f}} 
+\index{authenticate.php@{authenticate.php}!\$link@{\$link}}
+\index{\$link@{\$link}!authenticate.php@{authenticate.php}}
+\doxysubsubsection{\texorpdfstring{\$link}{$link}}
+{\footnotesize\ttfamily \$link = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}link\char`\"{}\mbox{]})}
+
+\mbox{\Hypertarget{authenticate_8php_a3c7d69871cf96b0835372fc20e7a984c}\label{authenticate_8php_a3c7d69871cf96b0835372fc20e7a984c}} 
+\index{authenticate.php@{authenticate.php}!else@{else}}
+\index{else@{else}!authenticate.php@{authenticate.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}} ( \$stmt-\/$>$num\+\_\+rows $>$ 0) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    echo \textcolor{stringliteral}{'Incorrect username!'}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{authenticate_8php_aa71c8f87b1c0f5b99ebff446cdb2e8f1}\label{authenticate_8php_aa71c8f87b1c0f5b99ebff446cdb2e8f1}} 
+\index{authenticate.php@{authenticate.php}!if@{if}}
+\index{if@{if}!authenticate.php@{authenticate.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    echo \textcolor{stringliteral}{'Incorrect username!'}}
+
+\end{DoxyCode}

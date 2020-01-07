@@ -1,0 +1,125 @@
+\hypertarget{register__user_8php}{}\doxysection{api/register\+\_\+user.php File Reference}
+\label{register__user_8php}\index{api/register\_user.php@{api/register\_user.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{register__user_8php_a9ec944afb63bf131a4cbda887907c836}{\$\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+H\+O\+ST}} = \char`\"{}\char`\"{}
+\item 
+\mbox{\hyperlink{register__user_8php_adfdf4bbc1f8066e64d5e0f5e4eefdc57}{\$\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+U\+S\+ER}} = \char`\"{}\char`\"{}
+\item 
+\mbox{\hyperlink{register__user_8php_ae858da3f69b9d402e0a063e6a7fc2f5b}{\$\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+P\+A\+SS}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{register__user_8php_a584a643ec0e542b8bf6f042ab5ecc9d2}{\$\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{register__user_8php_a5d346e31b75d916e3bac9cb193bfc97f}{\$link}} = htmlspecialchars(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}S\+E\+R\+V\+E\+R\+\_\+\+N\+A\+ME\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{register__user_8php_a3b1f76dd64cdf648f98c5ef7f6c094b1}{\$go\+To}} = \char`\"{}http\+://\char`\"{}.htmlspecialchars(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}S\+E\+R\+V\+E\+R\+\_\+\+N\+A\+ME\textquotesingle{}\mbox{]}).\char`\"{}/$\sim$levymaty/\char`\"{}
+\item 
+\mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}}(strpos(\$link, \char`\"{}toad\char`\"{})) \mbox{\hyperlink{register__user_8php_a5894a8dcaeff5a403c5ad8a6d070be41}{else}}
+\item 
+\mbox{\hyperlink{register__user_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn}} = new mysqli(\$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+H\+O\+ST, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+U\+S\+ER, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+P\+A\+SS, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME)
+\item 
+\mbox{\hyperlink{register__user_8php_aa8d043db9d292d29cb663e554d3f0ffc}{\$\+U\+S\+E\+R\+N\+A\+ME}} = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}username\char`\"{}\mbox{]})
+\item 
+\mbox{\hyperlink{register__user_8php_a2b09b1c2c22822d20c76e6bc0a008904}{\$password\+From\+Post}} = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}password\char`\"{}\mbox{]})
+\item 
+\mbox{\hyperlink{register__user_8php_ac6c166cb90c97e799a631c6cc894d841}{\$\+P\+A\+SS}}
+\item 
+\mbox{\hyperlink{register__user_8php_a47bae00d656c37ccabf3f0a6e8ca39ec}{\$\+E\+M\+A\+IL}} = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}email\char`\"{}\mbox{]})
+\item 
+\mbox{\hyperlink{register__user_8php_a047170d6020a882807665812a27e2525}{\$sql}} = \char`\"{}I\+N\+S\+E\+RT I\+N\+TO users (username, password, email) V\+A\+L\+U\+ES (\textquotesingle{}\$U\+S\+E\+R\+N\+A\+ME\textquotesingle{}, \textquotesingle{}\$P\+A\+SS\textquotesingle{}, \textquotesingle{}\$E\+M\+A\+IL\textquotesingle{})\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{register__user_8php_aa8a5a87b9c1a6a0819b88447cbe41877}\label{register__user_8php_aa8a5a87b9c1a6a0819b88447cbe41877}} 
+\index{register\_user.php@{register\_user.php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$conn}{$conn}}
+{\footnotesize\ttfamily \$conn = new mysqli(\$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+H\+O\+ST, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+U\+S\+ER, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+P\+A\+SS, \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME)}
+
+\mbox{\Hypertarget{register__user_8php_a9ec944afb63bf131a4cbda887907c836}\label{register__user_8php_a9ec944afb63bf131a4cbda887907c836}} 
+\index{register\_user.php@{register\_user.php}!\$DATABASE\_HOST@{\$DATABASE\_HOST}}
+\index{\$DATABASE\_HOST@{\$DATABASE\_HOST}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$DATABASE\_HOST}{$DATABASE\_HOST}}
+{\footnotesize\ttfamily \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+H\+O\+ST = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{register__user_8php_a584a643ec0e542b8bf6f042ab5ecc9d2}\label{register__user_8php_a584a643ec0e542b8bf6f042ab5ecc9d2}} 
+\index{register\_user.php@{register\_user.php}!\$DATABASE\_NAME@{\$DATABASE\_NAME}}
+\index{\$DATABASE\_NAME@{\$DATABASE\_NAME}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$DATABASE\_NAME}{$DATABASE\_NAME}}
+{\footnotesize\ttfamily \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{register__user_8php_ae858da3f69b9d402e0a063e6a7fc2f5b}\label{register__user_8php_ae858da3f69b9d402e0a063e6a7fc2f5b}} 
+\index{register\_user.php@{register\_user.php}!\$DATABASE\_PASS@{\$DATABASE\_PASS}}
+\index{\$DATABASE\_PASS@{\$DATABASE\_PASS}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$DATABASE\_PASS}{$DATABASE\_PASS}}
+{\footnotesize\ttfamily \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+P\+A\+SS = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{register__user_8php_adfdf4bbc1f8066e64d5e0f5e4eefdc57}\label{register__user_8php_adfdf4bbc1f8066e64d5e0f5e4eefdc57}} 
+\index{register\_user.php@{register\_user.php}!\$DATABASE\_USER@{\$DATABASE\_USER}}
+\index{\$DATABASE\_USER@{\$DATABASE\_USER}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$DATABASE\_USER}{$DATABASE\_USER}}
+{\footnotesize\ttfamily \$D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+U\+S\+ER = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{register__user_8php_a47bae00d656c37ccabf3f0a6e8ca39ec}\label{register__user_8php_a47bae00d656c37ccabf3f0a6e8ca39ec}} 
+\index{register\_user.php@{register\_user.php}!\$EMAIL@{\$EMAIL}}
+\index{\$EMAIL@{\$EMAIL}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$EMAIL}{$EMAIL}}
+{\footnotesize\ttfamily \$E\+M\+A\+IL = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}email\char`\"{}\mbox{]})}
+
+\mbox{\Hypertarget{register__user_8php_a3b1f76dd64cdf648f98c5ef7f6c094b1}\label{register__user_8php_a3b1f76dd64cdf648f98c5ef7f6c094b1}} 
+\index{register\_user.php@{register\_user.php}!\$goTo@{\$goTo}}
+\index{\$goTo@{\$goTo}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$goTo}{$goTo}}
+{\footnotesize\ttfamily \$go\+To = \char`\"{}http\+://\char`\"{}.htmlspecialchars(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}S\+E\+R\+V\+E\+R\+\_\+\+N\+A\+ME\textquotesingle{}\mbox{]}).\char`\"{}/$\sim$levymaty/\char`\"{}}
+
+\mbox{\Hypertarget{register__user_8php_a5d346e31b75d916e3bac9cb193bfc97f}\label{register__user_8php_a5d346e31b75d916e3bac9cb193bfc97f}} 
+\index{register\_user.php@{register\_user.php}!\$link@{\$link}}
+\index{\$link@{\$link}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$link}{$link}}
+{\footnotesize\ttfamily \$link = htmlspecialchars(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}S\+E\+R\+V\+E\+R\+\_\+\+N\+A\+ME\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{register__user_8php_ac6c166cb90c97e799a631c6cc894d841}\label{register__user_8php_ac6c166cb90c97e799a631c6cc894d841}} 
+\index{register\_user.php@{register\_user.php}!\$PASS@{\$PASS}}
+\index{\$PASS@{\$PASS}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$PASS}{$PASS}}
+{\footnotesize\ttfamily \$P\+A\+SS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= password\_hash(\mbox{\hyperlink{register__user_8php_a2b09b1c2c22822d20c76e6bc0a008904}{\$passwordFromPost}}, PASSWORD\_BCRYPT, [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'cost'} => 11,}
+\DoxyCodeLine{    ])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{register__user_8php_a2b09b1c2c22822d20c76e6bc0a008904}\label{register__user_8php_a2b09b1c2c22822d20c76e6bc0a008904}} 
+\index{register\_user.php@{register\_user.php}!\$passwordFromPost@{\$passwordFromPost}}
+\index{\$passwordFromPost@{\$passwordFromPost}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$passwordFromPost}{$passwordFromPost}}
+{\footnotesize\ttfamily \$password\+From\+Post = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}password\char`\"{}\mbox{]})}
+
+\mbox{\Hypertarget{register__user_8php_a047170d6020a882807665812a27e2525}\label{register__user_8php_a047170d6020a882807665812a27e2525}} 
+\index{register\_user.php@{register\_user.php}!\$sql@{\$sql}}
+\index{\$sql@{\$sql}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$sql}{$sql}}
+{\footnotesize\ttfamily \$sql = \char`\"{}I\+N\+S\+E\+RT I\+N\+TO users (username, password, email) V\+A\+L\+U\+ES (\textquotesingle{}\$U\+S\+E\+R\+N\+A\+ME\textquotesingle{}, \textquotesingle{}\$P\+A\+SS\textquotesingle{}, \textquotesingle{}\$E\+M\+A\+IL\textquotesingle{})\char`\"{}}
+
+\mbox{\Hypertarget{register__user_8php_aa8d043db9d292d29cb663e554d3f0ffc}\label{register__user_8php_aa8d043db9d292d29cb663e554d3f0ffc}} 
+\index{register\_user.php@{register\_user.php}!\$USERNAME@{\$USERNAME}}
+\index{\$USERNAME@{\$USERNAME}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{\$USERNAME}{$USERNAME}}
+{\footnotesize\ttfamily \$U\+S\+E\+R\+N\+A\+ME = htmlspecialchars(\$\+\_\+\+P\+O\+ST\mbox{[}\char`\"{}username\char`\"{}\mbox{]})}
+
+\mbox{\Hypertarget{register__user_8php_a5894a8dcaeff5a403c5ad8a6d070be41}\label{register__user_8php_a5894a8dcaeff5a403c5ad8a6d070be41}} 
+\index{register\_user.php@{register\_user.php}!else@{else}}
+\index{else@{else}!register\_user.php@{register\_user.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fanart_8php_a9fd3cb77418876e48e2bccf7d5f77ba6}{if}} ( \$conn-\/$>$query( \$sql)===T\+R\+UE) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{register__user_8php_a9ec944afb63bf131a4cbda887907c836}{\$DATABASE\_HOST}} = \textcolor{stringliteral}{'localhost'}}
+
+\end{DoxyCode}

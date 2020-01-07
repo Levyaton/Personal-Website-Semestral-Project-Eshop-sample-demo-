@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_1ae4179d5e953611aae20c997279e02c" kind="dir">
+    <compoundname>models</compoundname>
+    <innerfile refid="db_8php">db.php</innerfile>
+    <innerfile refid="db_base_8php">dbBase.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="models/"/>
+  </compounddef>
+</doxygen>
