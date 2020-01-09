@@ -1,0 +1,86 @@
+Zadání:
+    Osobní blog, složený z několika stránek: 
+        About me, obsahující informace o tom, kdo jsem, 
+        What's New, obsahující text o stavu mého života, 
+        Homepage, obsahující uvítání, 
+        Git, obsahující odkaz na můj Github a školní gitlab, 
+        Contact, obsahující kontakty na mě a 
+        Gallerii, která se skládá ze čtyřech částí: 
+            Textová galerie (Zde budou odkazy na texty, které jsem napsal), 
+            úvodní slovo a 
+            obrázková galerie. 
+                Ta se zkládá ze dvou částí,
+                Moje Kresby a 
+                Fanart. 
+
+                Rozkliknutí obrázku uživateli obrázek zvětší a pod ním nalezne předchozí a následující obrázky. 
+                Když rozklikne obrázek, který je pod ním, ten obrázek se stane hlavním. 
+                Když je otevřen první nebo poslední obrázek, následující nebo předchozí obrázky budou nabízeny z konce nebo začátku gallerye, 
+                tvořící cyklickou frontu. Do mých kreseb budu moct kresby přidávát jen já, jako admin, manuálně, zatím co do fanartu může přidávat kdokoli, 
+                kdo je příhlášený registrovaný uživatel. 
+                Registrace bude skrz formulář a bude vyžadovat heslo, jméno a email. 
+                Uživatelé se mouhou přihlásit pomocí jejich uživatelského jména, nebo emailové adresy. 
+                Když bude uživatel přihlášen, uvidí svoje jméno vedle nabídky logout.
+
+Uživatelská příručka:
+    *(Při popisu blogu budu předpokládat že máte zvolený "Theme" zvaný Levyaton. Pro jeho visvětlení a vysvětlení "Themů" prosím čtěte dál)
+
+    Pro procházení stránek se používá navigační panel na vrcholu (nebo v případě podkategorií galerie, na straně) stránky.
+    Stránka, na které se nacházíte, má v navigačním panelu své okénko vybarvené červeně.
+    
+    Na Homepage naleznete uvítací gif postavy Levyatona a uvítací zprívu
+
+    Na About Me naleznete informace o mě, Matyášovi Levy.
+
+    Na What's New naleznete informace o stavu mého osobního života.
+
+    Na Gallery naleznete nový navigační panel, tentokrát na levé straně stránky. Podkategorie, na které se nacházíte, 
+    má ve novém navigačním panelu své okénko vybarvené černě.
+    Dále zde naleznete opět uvítací gif z Homepage a vysvětlení, 
+    proč zde ukazuji svou tvorbu.
+
+        V podkategorii Intro naleznete již zmíněnýuvítací gif z Homepage a vysvětlení, proč zde ukazuji svou tvorbu.
+        V podkategorii Image Gallery Naleznete Dva obrázky složek s jejich názvy pod nimi, My art a Fanart. Zároveň se vám zde ukáží další dvě podkategorie, 
+        s identickými jménysložek. Pro navštívení těchto složek použijte tyto dvě nové podkategorie.
+
+            Na My Art naleznete obrázky, co jsem namaloval já, Matyáš Levy. Kliknutím na obrázek se vám obrázek otevře v režimu galerie, 
+            kde si obrázky můžete prohlédnout kliknutím na nadcházející, nebo předchozí obrázek, v seznamu třech po sobě pod obrázkem.
+
+            Na Fanart naleznete obrázky, co namalovali jiní lidé, v obdivu pro mne, Matyáše Levy, nebo postavy Levyatona. 
+            Kliknutím na obrázek se vám obrázek otevře v režimu galerie, kde si obrázky můžete prohlédnout kliknutím na nadcházející, 
+            nebo předchozí obrázek, v seznamu třech po sobě pod obrázkem.
+            Registrovaní uživatelé zde také naleznou tlačítko Upload File, které vám umožní nahrát nový obrázek. Po nahrátí se vám zobrazí ve zmenšené podobě, 
+            ukáže se vám jeho velikost a máte možnost změnit jeho jméno. Dále můžete potvrdit upload obrázku, nebo ho zrušit. Po náhrání obrázku ho naleznete mezi
+            ostatními obrázky této složky, s vaším uživatelským jménem před jménem obrázku.
+
+        V podkategorii Videos naleznete mou tvorbu z předmětu ZMT, kterou je video s popisem.
+
+        V podkategorii Writing naleznete odkazy na texty, které jsem napsal.
+    
+    Na Git naleznete odkazy na mojou (Matyáše Levy) osobní a školní stránku gitlabu.
+
+    Na Contact naleznete odkazy na můj (Matyáše Levy) Facebook, Instagram a mou emailovou adresu.
+
+    Jste-li přihlášeni, uvidíte v navbaru dále své uživatelské jméno a vedle něj tlačítko logout. Kliknutím na vaše jméno vám vyskočí dvě nové možnosti,
+    okénko s textem "Levyaton" a okénko s textem "Notayvel". Jedná se o "Themy". Levyaton je defaultní theme, ve němž blog vypadá nejépe. Notayvel je theme, 
+    který byl vyroben s cílem totálního chaosu, jako protipól k Levyatonu. Není to theme, který doporučuji, avšak pro ty statečné, nebo hledající výzvu, 
+    tento theme je plně funkční a použít ho můžete. Theme vám určí, jak celý blog bude vypadat.
+
+    Nejste-li přihlášení, můžete se přihlásit vyplněním formulářových polích Username a Password svým uživatelským jménem a heslem.
+    Stisknutím tlačítka Login budete (zadali jste-li správné údaje) přihlášeni. 
+    Nepřihlášení uživatelé zde také naleznou odkaz na registrační formulář. V něm si můžete vytvořit účet. Vaše uživatelské jméno musí být dlouhé mezi 5 a 20 znaky
+    a nesmí obsahovat žádné speciální znaky ([^a-zA-Z0-9\!\@\#\$\%\^\&\*\(\)\_\+]). Vaše heslo musí mít mezi 10 a 25 znaky, obsahovat alespoň 1 písmeno a číslo
+    a také nesmí obsahovat speciální znaky. 
+
+
+Technické informace:
+
+    Uživatelé jsou ukládáni v SQL databázy, na servru Adminer.
+    Obrázky jsou ukládány přímo ve složce na servru.
+
+
+
+
+
+
+

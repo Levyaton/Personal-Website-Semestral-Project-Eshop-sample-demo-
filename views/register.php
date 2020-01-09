@@ -1,5 +1,8 @@
 <?php
-	session_start();
+     session_start();
+     /*
+    	     Creates the 'Register' page
+	*/
 ?>
 <!DOCTYPE html>
 <html>
