@@ -1,4 +1,7 @@
 <?php
+    /*
+        Inject a javascript code that will allow the user to properlly interact with the gallery
+	*/
     $files = scandir($path);
     $files = array_slice($files, 2); 
     $result = json_encode($files)."\n";

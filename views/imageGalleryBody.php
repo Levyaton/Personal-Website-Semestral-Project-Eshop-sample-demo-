@@ -1,4 +1,8 @@
 <?php
+    /*
+    	Injects the code needed to display the images present in a given folder (this information must be stored prior to the inclusion of this code)
+    */
+    
     echo '
     <div class="content" style="padding-left:16px">
         <div class="row">

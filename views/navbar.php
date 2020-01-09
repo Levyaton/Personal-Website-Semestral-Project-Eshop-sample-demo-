@@ -1,4 +1,12 @@
 <?php
+
+  /*
+    Injects the  code for the navigation bar
+  */
+    
+  /*
+    Injects the correct stylesheet that matches the users chosen theme (defaul is global.css)
+  */
 if (isSet($_SESSION['theme'])){
   if($_SESSION['theme'] ==2){
     echo '
@@ -30,8 +38,6 @@ else{
     />
     ';
 }
-
- # echo'<h2>'.$_SESSION['theme'].'</h2>';
 ?>
 
 
@@ -48,11 +54,23 @@ else{
   <a href="/~levymaty/git" <?php echo ($_SERVER['REQUEST_URI'] == '/~levymaty/git') ? ' class="active"' : '' ; ?>>Git</a>
   <a href="/~levymaty/contact" <?php echo ($_SERVER['REQUEST_URI'] == '/~levymaty/contact') ? ' class="active"' : ''  ; ?>>Contact</a>
   
-  <?php include ('formBox.php'); ?>
+
+  <?php 
+    /*
+      Injects the code needed for the display of the sign in form, register link and login button, if user is logged in,
+      or the username, theme select and logout button, if they are
+		*/
+    
+    include ('formBox.php'); 
+  
+  ?>
 
 </div>
 
 <?php
+    /*
+			Injects the code needed for the side navigation bar, which is used when the user is in the 'Gallery' section
+		*/
   if(($_SERVER['REQUEST_URI'] ==  '/~levymaty/gallery-gallery') || ($_SERVER['REQUEST_URI'] ==  '/~levymaty/myArt') || ($_SERVER['REQUEST_URI'] ==  '/~levymaty/fanart' || ($_SERVER['REQUEST_URI'] ==  '/~levymaty/videos' ) || ($_SERVER['REQUEST_URI'] ==  '/~levymaty/gallery-stories') || ($_SERVER['REQUEST_URI'] ==  '/~levymaty/gallery'))){
     echo'
     <div class="sidenav" id="sidenavId">

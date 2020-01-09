@@ -1,6 +1,14 @@
 <?php
+/*
+    Api in charge of changing the users stored theme in their db entry
+*/
 
 session_start();
+
+
+/*
+    Db credentials variable names initialization
+*/
 
 $DATABASE_HOST = "";
 $DATABASE_USER = "";
@@ -8,7 +16,11 @@ $DATABASE_PASS = '';
 $DATABASE_NAME = '';
 
 $link = htmlspecialchars($_SERVER['SERVER_NAME']);
-//echo $link;
+
+/*
+    Set's the db information, based on the server name
+*/
+
 if(strpos($link, "toad")){
     $DATABASE_HOST = '127.0.0.1';
     $DATABASE_USER = 'levymaty';
@@ -21,39 +33,50 @@ else{
     $DATABASE_PASS = '';
     $DATABASE_NAME = 'userlist';
 }
-//echo $DATABASE_HOST;
-//echo $DATABASE_USER;
-//echo $DATABASE_PASS;
-//echo $DATABASE_NAME;
-// Try and connect using the info above.
+
+/*
+    Establishes db connection
+*/
+
 $conn = new mysqli($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+/*
+    Converts special characters from the provided credentials to html entities
+*/
+
 $username = htmlspecialchars($_POST["userName"]);
 $chosenTheme = htmlspecialchars($_POST["num"]);
 $link = htmlspecialchars($_POST["link"]);
+
+/*
+    Ensures that the chosen theme is 1 or 2
+*/
+
 if ( $chosenTheme != 1 && $chosenTheme != 2) {
 	die ('Please enter 1 or 2');
 }
 
-//var_dump($_SESSION);
-#$query = "UPDATE 'users' SET 'theme' = '".$chosenTheme."' WHERE 'users'.'id' = ".$_SESSION['theme'].";";
+
+/*
+    Finds the user entry in the db
+*/
+
 $sql = "UPDATE `users` SET `theme` = '".$chosenTheme."' WHERE `users`.`username` = '".$_SESSION['name']."'";
+
+
+/*
+    Updates the users theme in db to be the selected one
+*/
 
 if ($conn->query($sql) === TRUE) {
     $_SESSION['theme'] = $chosenTheme;
-    //echo "Record updated successfully";
     $conn->close();
     header("Location: ".$link."");
 } else {
-   # $error = mysql_error();
-    
-   # echo "<script>console.log('Error updating record: ' + ' ".$conn->error."');</script>";
-    //echo "Error updating record: " . $conn->error;
     $conn->close();
-    #header("Location: "."404.com");
     header("Location: ".$link."");
 }
 

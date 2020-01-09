@@ -5,7 +5,14 @@
 	/>
 
 
-		<?php
+          <?php
+               /*
+                    Displays different information, based on if the user is logged in, or not.
+                         If they are logged in, the displayed elements will be their user name,
+                    which, when clicked, allowes the user to switch their theme (Theme number 2 is chaotic, deigned mainly for joke purposes, but working porperly and
+                    as intended). The loggout button is also available.
+                         If not, the displayed elements will be columns for their password and username, as well as a login button and register link
+		     */
 			if (isSet($_SESSION["loggedin"])) {
                     echo '
                     <div id="loggedin">

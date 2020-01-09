@@ -1,22 +1,30 @@
 <?php
    session_start();
    ini_set('display_errors',1);
-error_reporting(E_ALL);
-   #header("Location: http://localhost/~levymaty");
+   error_reporting(E_ALL);
+
+   /*
+      Api in charge of storing a provided image in the fanart folder
+   */
+
+
+   /*
+      Prepares needed variables
+   */
     $path =__DIR__ . '/..'. '/assets/fanart';
     $imageFile = $_FILES['imgFile']['name'];
     $tens = 0;
     $singles = 2;
+
+    /*
+      Renames the files present in the folder, so that the newst file can be 01 end every other one get's incremented after that
+   */
     if ($handle = opendir($path)) {
         while (false !== ($fileName = readdir($handle))) {
-            //$newName = str_replace("SKU#","",$fileName);
             if(strlen($fileName) > 2){
-               // echo $fileName."\n";
                 $newName = substr_replace($fileName,$tens.$singles,0,2);
-                $replaced = str_replace("SKU#", $newName, $fileName);
-                //echo $replaced;
-                rename($path."/".$fileName, $path."/".$newName);
-                //echo $fileName."\n";
+                $replaced = str_replace("SKU#", $newName, $fileName); 
+                rename($path."/".$fileName, $path."/".$newName); 
                 $singles++;
                 if($singles==10){
                     $singles = 0;
@@ -27,12 +35,17 @@ error_reporting(E_ALL);
         }
         closedir($handle);
     }
+
+    /*
+      Sotres the provided image in the fanart folder, with a modify name that contains the name of the user that provided it, as well as numbering the
+      image as 01
+   */
+
     $info = pathinfo($imageFile);
     $ext = $info['extension'];
     $newFileName =  "01 - ".htmlspecialchars($_SESSION["name"])." - ".htmlspecialchars($_POST["fname"]).".".htmlspecialchars($ext);
 
     if(move_uploaded_file( $_FILES['imgFile']['tmp_name'], $path."/".$newFileName)){
-        //echo 'works';
     }else {
         $html_body = '<h1>File upload error!</h1>';
    switch ($_FILES[0]['error']) {
@@ -51,9 +64,7 @@ error_reporting(E_ALL);
    default:
       $html_body .= 'unknown errror';
    } 
-  
 
-  // echo ($html_body);
 }
 $link = htmlspecialchars($_POST["link"]);
 header("Location: ".$link."");

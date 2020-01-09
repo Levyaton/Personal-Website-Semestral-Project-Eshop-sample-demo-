@@ -1,30 +1,36 @@
+
 <?php
 include "../models/db.php";
 
-// Change this to your connection info.
-//  
+/*
+Api is in charge of comparing user information from db with the given credentials, provided by the client
+*/
 
+/*
+Check that the needed credentials were really provided
+*/
 if ( !isset($_POST["username"], $_POST["password"]) ) {
-	// Could not get the data that should have been sent.
 	die ('Please fill both the username and password field!');
 }
-// Prepare our SQL, preparing the SQL statement will prevent SQL injection.
+
+/*
+Querries the db for a user with a matching username as the one provided by the client and stores their id, username and theme in session variables, 
+if the password was the same as the one in the users stored db entry
+*/
 if ($stmt = $con->prepare('SELECT id, password, theme FROM users WHERE username = ?')) {
-	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
+
 	$stmt->bind_param('s', $_POST["username"]);
 	$stmt->execute();
-	// Store the result so we can check if the account exists in the database.
+	
 	$stmt->store_result();
 }
 if ($stmt->num_rows > 0) {
 	$stmt->bind_result($id, $password, $theme);
 	$stmt->fetch();
 
-	// Account exists, now we verify the password.
-	// Note: remember to use password_hash in your registration file to store the hashed passwords.
+
 	if (password_verify(htmlspecialchars($_POST["password"]), $password)) {
-		// Verification success! User has loggedin!
-		// Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
+	
 		session_regenerate_id();
 		$_SESSION['loggedin'] = TRUE;
 		$_SESSION['name'] = htmlspecialchars($_POST["username"]);
@@ -39,22 +45,25 @@ if ($stmt->num_rows > 0) {
 }
 $stmt->close();
 
+
+/*
+Querries the db for a user with a matching email as the one provided by the client and stores their id, username and theme in session variables, 
+if the password was the same as the one in the users stored db entry
+*/
 if ($stmt = $con->prepare('SELECT id, password, username, theme FROM users WHERE email = ?')) {
-	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
+
 	$stmt->bind_param('s', $_POST["username"]);
 	$stmt->execute();
-	// Store the result so we can check if the account exists in the database.
+
 	$stmt->store_result();
 }
 echo "found ". $stmt->num_rows . " rows";
 if ($stmt->num_rows > 0) {
 	$stmt->bind_result($id, $password, $username, $theme);
 	$stmt->fetch();
-	// Account exists, now we verify the password.
-	// Note: remember to use password_hash in your registration file to store the hashed passwords.
+
 	if (password_verify(htmlspecialchars($_POST["password"]), $password)) {
-		// Verification success! User has loggedin!
-		// Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
+	
 		session_regenerate_id();
 		$_SESSION['loggedin'] = TRUE;
 		$_SESSION['name'] = htmlspecialchars($username);

@@ -1,5 +1,8 @@
 <?php
 	session_start();
+	/*
+    	Creates the 'Gallery' page
+	*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,6 +20,9 @@
 	/>
 
 <?php
+	/*
+		Injects the code needed for the navigation bar
+	*/
 	include ('navbar.php');
 ?>
 

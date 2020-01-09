@@ -1,5 +1,7 @@
 <?php
-
+    /*
+		Chooses where to rederect the user
+	*/
 switch ($_SERVER['REQUEST_URI']) {
     case '/~levymaty' :
         require __DIR__ . '/views/homepage.php';

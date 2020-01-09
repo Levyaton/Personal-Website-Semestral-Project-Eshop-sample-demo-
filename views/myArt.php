@@ -1,5 +1,8 @@
 <?php
 	session_start();
+	/*
+    	Creates the 'My Art' page
+	*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,11 +32,24 @@
     />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <?php
+	<?php
+		/*
+			Prepares variables needed for the imageGalleryBody code
+		*/
         $path =__DIR__ . '/..'. '/assets/myArt';
-        $javascriptPath = '"/~levymaty/assets/myArt/';
-        include ('navbar.php');
-        include ('imageGalleryBody.php');
+		$javascriptPath = '"/~levymaty/assets/myArt/';
+		/*
+			Injects the code needed for the navigation bar
+		*/
+		include ('navbar.php');
+		/*
+			Injects the code needed for the images in the 'myArt' folder to be displayed
+		*/
+		include ('imageGalleryBody.php');
+		
+		/*
+			Injects the code needed for the image gallery to work correctly
+		*/
         include ('imageGalleryScript.php');
     ?>
 
