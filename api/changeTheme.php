@@ -63,8 +63,9 @@ if ( $chosenTheme != 1 && $chosenTheme != 2) {
 /*
     Finds the user entry in the db
 */
+$username = htmlspecialchars($_SESSION['name']);
 
-$sql = "UPDATE `users` SET `theme` = '".$chosenTheme."' WHERE `users`.`username` = '".$_SESSION['name']."'";
+$sql = "UPDATE `users` SET `theme` = '".$chosenTheme."' WHERE `users`.`username` = '".$username."'";
 
 
 /*
