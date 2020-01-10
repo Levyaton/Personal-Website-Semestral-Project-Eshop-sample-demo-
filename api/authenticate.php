@@ -58,7 +58,7 @@ if ($stmt = $con->prepare('SELECT id, password, username, theme FROM users WHERE
 
 	$stmt->store_result();
 }
-echo "found ". $stmt->num_rows . " rows";
+//echo "found ". $stmt->num_rows . " rows";
 if ($stmt->num_rows > 0) {
 	$stmt->bind_result($id, $password, $username, $theme);
 	$stmt->fetch();
