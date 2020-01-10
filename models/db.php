@@ -1,6 +1,4 @@
 <?php
-    session_start();
-    ob_start();
     
     /*
         Prepares a db connection
