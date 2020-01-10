@@ -32,11 +32,11 @@
         $DATABASE_PASS = '';
         $DATABASE_NAME = 'userlist';
     }
-    echo $link;
-    echo $DATABASE_HOST;
-    echo $DATABASE_USER;
-    echo $DATABASE_PASS;
-    echo $DATABASE_NAME;
+    //echo $link;
+    //echo $DATABASE_HOST;
+    //echo $DATABASE_USER;
+    //echo $DATABASE_PASS;
+    //echo $DATABASE_NAME;
 
     /*
         Establishes db connection
