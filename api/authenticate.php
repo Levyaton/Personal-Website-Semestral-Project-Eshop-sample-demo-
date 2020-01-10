@@ -1,4 +1,5 @@
 <?php
+session_start();
  ob_start();
 include "../models/db.php";
 
@@ -40,10 +41,14 @@ if ($stmt->num_rows > 0) {
 		$link = htmlspecialchars($_POST["link"]);
 		header("Location: ".$link."");
 	} else {
-		echo 'Incorrect password!';
+		//echo 'Incorrect password!';
+		$link = htmlspecialchars($_POST["link"]);
+		header("Location: ".$link."");
 	}
 } else {
-	echo 'Incorrect username!';
+	//echo 'Incorrect username!';
+	$link = htmlspecialchars($_POST["link"]);
+		header("Location: ".$link."");
 }
 $stmt->close();
 
@@ -76,9 +81,13 @@ if ($stmt->num_rows > 0) {
 		header("Location: ".$link."");
 	} else {
 		//echo 'Incorrect password!';
+		$link = htmlspecialchars($_POST["link"]);
+		header("Location: ".$link."");
 	}
 } else {
 	//echo 'Incorrect username!';
+	$link = htmlspecialchars($_POST["link"]);
+		header("Location: ".$link."");
 }
 $stmt->close();
 
