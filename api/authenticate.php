@@ -36,7 +36,9 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['name'] = htmlspecialchars($_POST["username"]);
 		$_SESSION['id'] = $id;
 		$_SESSION['theme'] = $theme;
-		echo 'Welcome ' . $_SESSION['name'] . '!';
+		//echo 'Welcome ' . $_SESSION['name'] . '!';
+		$link = htmlspecialchars($_POST["link"]);
+		header("Location: ".$link."");
 	} else {
 		echo 'Incorrect password!';
 	}
@@ -69,14 +71,15 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['name'] = htmlspecialchars($username);
 		$_SESSION['id'] = $id;
 		$_SESSION['theme'] = $theme;
-		echo 'Welcome ' . $_SESSION['name'] . '!';
+		//echo 'Welcome ' . $_SESSION['name'] . '!';
+		$link = htmlspecialchars($_POST["link"]);
+		header("Location: ".$link."");
 	} else {
-		echo 'Incorrect password!';
+		//echo 'Incorrect password!';
 	}
 } else {
-	echo 'Incorrect username!';
+	//echo 'Incorrect username!';
 }
 $stmt->close();
-$link = htmlspecialchars($_POST["link"]);
-//header("Location: ".$link."");
+
 ?>
