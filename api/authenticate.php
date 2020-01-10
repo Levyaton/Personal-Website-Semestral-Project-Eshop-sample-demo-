@@ -1,6 +1,5 @@
 
 <?php
- session_start();
  ob_start();
 include "../models/db.php";
 
