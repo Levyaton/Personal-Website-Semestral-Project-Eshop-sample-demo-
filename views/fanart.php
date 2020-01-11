@@ -55,15 +55,6 @@
 		include ('navbar.php');
 
 		/*
-			If the user is logged in, and the server name does not contain toad, injects the code needed for image uploading
-		*/
-		if(isSet($_SESSION["loggedin"])){
-			if(!strpos(htmlspecialchars($_SERVER['SERVER_NAME']), "toad")){
-				include ('uploadButton.php');
-			}
-		}
-
-		/*
 			Injects the code needed for the images in the 'fanart' folder to be displayed
 		*/
 		include ('imageGalleryBody.php');
