@@ -16,8 +16,7 @@ Zadání:
                 Rozkliknutí obrázku uživateli obrázek zvětší a pod ním nalezne předchozí a následující obrázky. 
                 Když rozklikne obrázek, který je pod ním, ten obrázek se stane hlavním. 
                 Když je otevřen první nebo poslední obrázek, následující nebo předchozí obrázky budou nabízeny z konce nebo začátku gallerye, 
-                tvořící cyklickou frontu. Do mých kreseb budu moct kresby přidávát jen já, jako admin, manuálně, zatím co do fanartu může přidávat kdokoli, 
-                kdo je příhlášený registrovaný uživatel. 
+                tvořící cyklickou frontu. Do obou slo6ek budu moct kresby přidávát jen já, jako admin, manuálně. 
                 Registrace bude skrz formulář a bude vyžadovat heslo, jméno a email. 
                 Uživatelé se mouhou přihlásit pomocí jejich uživatelského jména, nebo emailové adresy. 
                 Když bude uživatel přihlášen, uvidí svoje jméno vedle nabídky logout.
@@ -49,9 +48,6 @@ Uživatelská příručka:
             Na Fanart naleznete obrázky, co namalovali jiní lidé, v obdivu pro mne, Matyáše Levy, nebo postavy Levyatona. 
             Kliknutím na obrázek se vám obrázek otevře v režimu galerie, kde si obrázky můžete prohlédnout kliknutím na nadcházející, 
             nebo předchozí obrázek, v seznamu třech po sobě pod obrázkem.
-            Registrovaní uživatelé zde také naleznou tlačítko Upload File, které vám umožní nahrát nový obrázek. Po nahrátí se vám zobrazí ve zmenšené podobě, 
-            ukáže se vám jeho velikost a máte možnost změnit jeho jméno. Dále můžete potvrdit upload obrázku, nebo ho zrušit. Po náhrání obrázku ho naleznete mezi
-            ostatními obrázky této složky, s vaším uživatelským jménem před jménem obrázku.
 
         V podkategorii Videos naleznete mou tvorbu z předmětu ZMT, kterou je video s popisem.
 

@@ -55,9 +55,9 @@
 		include ('navbar.php');
 
 		/*
-			If the user is logged in, injects the code needed for image uploading
+			If the user is logged in and the server name does not contain the word toad, injects the code needed for image uploading
 		*/
-		if(isSet($_SESSION["loggedin"])){
+		if(isSet($_SESSION["loggedin"] && strpos(htmlspecialchars($_SERVER['SERVER_NAME']), "toad"))){
 			include ('uploadButton.php');
 		}
 
