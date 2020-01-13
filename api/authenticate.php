@@ -11,6 +11,8 @@ Api is in charge of comparing user information from db with the given credential
 Check that the needed credentials were really provided
 */
 if ( !isset($_POST["username"], $_POST["password"]) ) {
+	session_regenerate_id();
+		$_SESSION['loginTry'] = htmlspecialchars($_POST["username"]);
 	die ('Please fill both the username and password field!');
 }
 
@@ -39,14 +41,27 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['theme'] = $theme;
 		//echo 'Welcome ' . $_SESSION['name'] . '!';
 		$link = htmlspecialchars($_POST["link"]);
+		if(isSet($_SESSION['loginTry'])){
+			unset($_SESSION['loginTry']);
+		}
+		if(isSet($_SESSION['regUser'])){
+			unset($_SESSION['regUser']);
+		}
+		if(isSet($_SESSION['regEmail'])){
+			unset($_SESSION['regEmail']);
+		}
 		header("Location: ".$link."");
 	} else {
 		//echo 'Incorrect password!';
+		session_regenerate_id();
+		$_SESSION['loginTry'] = htmlspecialchars($_POST["username"]);
 		$link = htmlspecialchars($_POST["link"]);
 		header("Location: ".$link."");
 	}
 } else {
 	//echo 'Incorrect username!';
+	session_regenerate_id();
+		$_SESSION['loginTry'] = htmlspecialchars($_POST["username"]);
 	$link = htmlspecialchars($_POST["link"]);
 		header("Location: ".$link."");
 }
@@ -78,14 +93,27 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['theme'] = $theme;
 		//echo 'Welcome ' . $_SESSION['name'] . '!';
 		$link = htmlspecialchars($_POST["link"]);
+		if(isSet($_SESSION['loginTry'])){
+			unset($_SESSION['loginTry']);
+		}
+		if(isSet($_SESSION['regUser'])){
+			unset($_SESSION['regUser']);
+		}
+		if(isSet($_SESSION['regEmail'])){
+			unset($_SESSION['regEmail']);
+		}
 		header("Location: ".$link."");
 	} else {
 		//echo 'Incorrect password!';
+		session_regenerate_id();
+		$_SESSION['loginTry'] = htmlspecialchars($_POST["username"]);
 		$link = htmlspecialchars($_POST["link"]);
 		header("Location: ".$link."");
 	}
 } else {
 	//echo 'Incorrect username!';
+	session_regenerate_id();
+		$_SESSION['loginTry'] = htmlspecialchars($_POST["username"]);
 	$link = htmlspecialchars($_POST["link"]);
 		header("Location: ".$link."");
 }

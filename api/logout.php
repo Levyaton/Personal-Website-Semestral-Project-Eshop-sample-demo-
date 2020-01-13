@@ -20,6 +20,15 @@
     unset ($_SESSION['name']);
     unset ($_SESSION['id']);
     unset ($_SESSION['theme']);
+    if(isSet($_SESSION['loginTry'])){
+			unset($_SESSION['loginTry']);
+		}
+		if(isSet($_SESSION['regUser'])){
+			unset($_SESSION['regUser']);
+		}
+		if(isSet($_SESSION['regEmail'])){
+			unset($_SESSION['regEmail']);
+		}
     $link = htmlspecialchars($_POST["link"]);
     header("Location: ".$link."");
 ?>

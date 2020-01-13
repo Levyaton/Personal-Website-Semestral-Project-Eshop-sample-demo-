@@ -68,14 +68,18 @@
                     if($_SERVER['REQUEST_URI'] != '/~levymaty/register'){
                          echo '
                          <div id="formBox">
-                         <form id = "login" action="/~levymaty/api/authenticate.php" method="post" onSubmit="return validateInput()">
-                              <input type="text" name="username" placeholder="Username" id="username" minLenght="5" required>
+                         <form id = "login" action="/~levymaty/api/authenticate.php" method="post" onSubmit="return disableSumbmit()">
+                              <input type="text" name="username" placeholder="Username"';
+                              if(isSet($_SESSION['loginTry'])){
+                                   echo " value = '".$_SESSION['loginTry']."' ";
+                              }
+                              echo' id="username" minLenght="5" required>
                               <div class= "passwordBlock">
                                    <input type="password" name="password" placeholder="Password" id="password" required>
                               </div>
                               <input type="text" name="link" placeholder="'.$_SERVER['REQUEST_URI'].'" id="link" value="'.$_SERVER['REQUEST_URI'].'" style="display:none" required> 
                               
-                              <input type="submit" value="Login" class="buttons">
+                              <input type="submit" value="Login" id = "submitButton" class="buttons">
                          </form>
                           <a id = "register" href="/~levymaty/register">Register</a>
                           </div>
@@ -87,12 +91,18 @@
 
 <script>
 
-          
-          function ThemeSelect() {
+          function disableSumbmit() {
+               if(validateInput() != false){
+                    document.getElementById('submitButton').disabled=true;
+                    document.getElementById('submitButton').value='Submitting, please wait...';
+               }
+               else{
+                    return false;
+               }
                
           }
-
             function validateInput() {
+               
                 const form = document.getElementById("login");
                 const username = form.elements[0].value;
                 const passblock = form.elements[1]

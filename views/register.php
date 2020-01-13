@@ -23,16 +23,37 @@
 	include ('navbar.php');
 ?>
 
-<form id = "registerForm" action="/~levymaty/api/register_user.php" method="post" onSubmit="return validateInput()">
-                    <input type="text" name="username" placeholder="Username" id="username" required>
-                    <input type="email" name="email" placeholder="example@email.com" id="email" required>
+<form id = "registerForm" action="/~levymaty/api/register_user.php" method="post" onSubmit="return disableSumbmit()">
+                    <input type="text" name="username" placeholder="Username" id="username" 
+                    <?php
+                         if(isSet($_SESSION['regUser'])){
+                              echo " value = '".$_SESSION['regUser']."' ";
+                         }
+                    ?>
+                    required>
+                    <input type="email" name="email" placeholder="example@email.com" id="email" 
+                    <?php
+                         if(isSet($_SESSION['regEmail'])){
+                              echo " value = '".$_SESSION['regEmail']."' ";
+                         }
+                    ?>required>
                     <input type="password" name="password" placeholder="Password" id="password" required>
                     <input type="password" name="password" placeholder="Password" id="doublecheckedPassword" required>
-                    <input type="submit" value="Register">
+                    <input type="submit" value="Register" id = "submitButton">
 </form>
 
 
 <script>
+          function disableSumbmit() {
+               if(validateInput() != false){
+                    document.getElementById('submitButton').disabled=true;
+                    document.getElementById('submitButton').value='Submitting, please wait...';
+               }
+               else{
+                    return false;
+               }
+               
+          }
            
             function validateInput() {
                 const form = document.getElementById("registerForm");

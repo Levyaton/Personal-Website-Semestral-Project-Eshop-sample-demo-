@@ -79,13 +79,22 @@ if($stmt2 =  $conn->prepare('SELECT id FROM users WHERE email = ?')){
 */
 
 if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
+    session_regenerate_id();
+    $_SESSION['regUser'] = htmlspecialchars($_POST["username"]);
+    $_SESSION['regEmail'] = htmlspecialchars($_POST["email"]);
 	$stmt->bind_result($id);
     $stmt->fetch();
     $stmt->close();
-    header("Location: ".$goTo.""); 
+    header("Location: ".$__DIR__.'/~levymaty/register'); 
 }else{
     $stmt->close();
     $stmt2->close();
+    if(isSet($_SESSION['regUser'])){
+        unset($_SESSION['regUser']);
+    }
+    if(isSet($_SESSION['regEmail'])){
+        unset($_SESSION['regEmail']);
+    }
     $USERNAME = htmlspecialchars($_POST["username"]);
 	$passwordFromPost = htmlspecialchars($_POST["password"]);
     $PASS = password_hash($passwordFromPost, PASSWORD_BCRYPT, [
@@ -99,6 +108,9 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
         $_SESSION['name'] = htmlspecialchars($USERNAME);
         $conn->close();
     } else {
+        session_regenerate_id();
+        $_SESSION['regUser'] = htmlspecialchars($_POST["username"]);
+        $_SESSION['regEmail'] = htmlspecialchars($_POST["email"]);
         error_log("Error: " . $sql . "<br>" . $conn->error);
         $conn->close();
     }
