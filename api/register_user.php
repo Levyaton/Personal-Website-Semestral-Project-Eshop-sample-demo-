@@ -85,7 +85,7 @@ if ($stmt->num_rows > 0 || $stmt2->num_rows > 0) {
 	$stmt->bind_result($id);
     $stmt->fetch();
     $stmt->close();
-    header("Location: ".$__DIR__.'/~levymaty/register'); 
+    header("Location: /~levymaty/register"); 
 }else{
     $stmt->close();
     $stmt2->close();
