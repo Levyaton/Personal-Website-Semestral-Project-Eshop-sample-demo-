@@ -1,0 +1,71 @@
+*{
+   font: DecimaNova-Bold,"Helvetica Neue",Arial,sans-serif;
+   color: white;
+}
+body{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-image: url(../assets/bg-html.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+form{
+    margin-top: 10%;
+    margin-left: 50%;
+    position: relative;
+}
+
+hr{
+    width: 300%;
+    
+}
+
+.bikeFormElement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bikeFormElement *{
+    margin-right: 4%;
+    margin-bottom: 2%;
+}
+
+input{
+    color: black;
+}
+textarea{
+    color: black;
+}
+select{
+    color: black;
+}
+option{
+    color: black;
+}
+.TextArea{
+    color: black;
+    align-items: center;
+    position: relative;
+}
+
+.counter{
+    position: absolute;
+    right: -10;
+    bottom: 1;
+    font-size: x-small;
+    color: gray;
+}
+
+#logo{
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+button{
+    color: black;
+}

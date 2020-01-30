@@ -45,7 +45,8 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/~levymaty/videos' :
         require __DIR__ . '/views/videos.php';
         break;
-    
+    case '/~levymaty/bikeGallery' :
+        require __DIR__ . '/bikegallery/views/homepage.php';
     default: 
         require __DIR__ . '/views/404.html';
         break;
