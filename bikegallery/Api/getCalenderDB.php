@@ -1,6 +1,6 @@
 <?php
 
-    $link = "http://".$_SERVER['SERVER_NAME']."/~levymaty/bikegallery/models/db.json";
+    $link = $_SERVER['DOCUMENT_ROOT']."/~levymaty/bikegallery/models/db.json";
     $file = file_get_contents($link);
     
    
