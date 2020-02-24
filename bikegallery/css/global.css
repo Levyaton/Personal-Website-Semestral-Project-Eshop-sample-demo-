@@ -1,9 +1,9 @@
 *{
-   font: DecimaNova-Bold,"Helvetica Neue",Arial,sans-serif;
-   color: white;
+   font: DecimaNova,"Helvetica Neue",Arial,sans-serif;
+   color: #1d1d1b;
 }
 body{
-    position: fixed; 
+    position: relative; 
     top: 0; 
     left: 0; 
     background-image: url(../assets/bg-html.png);
@@ -11,16 +11,54 @@ body{
     background-position: center;
 }
 form{
-    margin-top: 10%;
-    margin-left: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 6%;
+    padding-bottom: 1%;
+    margin-top: -100px;
+    margin-left: 15%;
+    margin-right: 15%;
     position: relative;
+    background-color: white;
+}
+
+option font{
+    color: white;
+}
+select{
+    color: white;
+    background-color: #cad401;
+}
+
+select font{
+    color: white;
+}
+
+option::selection font{
+    color: white;
+}
+option::selection{
+    color: white;
+    background-color: #cad401;
+}
+
+option:hover{
+    color: black;
+    background-color: #cad401;
+}
+
+option{
+    color: white;
 }
 
 hr{
-    width: 300%;
+   
     
 }
 
+#displayedDate{
+    margin-left: 2%;
+}
 .bikeFormElement{
     display: flex;
     flex-direction: row;
@@ -32,28 +70,16 @@ hr{
     margin-bottom: 2%;
 }
 
-input{
-    color: black;
-}
-textarea{
-    color: black;
-}
-select{
-    color: black;
-}
-option{
-    color: black;
-}
+
 .TextArea{
-    color: black;
     align-items: center;
     position: relative;
 }
 
 .counter{
     position: absolute;
-    right: -10;
-    bottom: 1;
+    right: -10px;
+    bottom: 1px;
     font-size: x-small;
     color: gray;
 }
@@ -69,3 +95,131 @@ option{
 button{
     color: black;
 }
+
+textarea{
+    color: white;
+    background-color: #cad401;
+}
+input{
+    color: white;
+    background-color: #cad401;
+}
+
+/*
+
+    Calendar CSS
+
+*/
+
+#Instructions{
+    position: fixed;
+    left: -30%;
+    width: 100%;
+    margin-left: 10%;
+    top: 60%;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+#pickDate{
+    position: fixed;
+    display: none;
+    top: 30%;
+    left: 13%;
+    margin-left: 10%;
+    padding-right: 10%;
+    margin-left: 30%;
+
+}
+
+
+#cal{
+    position: relative;
+}
+
+#legend{
+    position: fixed;
+    bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    right: 32%;
+
+}
+
+#legend *{
+    margin-right: 2%;
+}
+.colorExplenation{
+    width: 100%;
+    top: 2%;
+}
+.example{
+    width: 10%;
+    height: 20px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    color: black;
+    width: 400px; 
+    text-align: center;
+    vertical-align: middle;
+}
+table{
+    background-color: gray;
+}
+
+td, th{
+    height: 50px;
+    background-color: white;
+}
+
+table thead{
+    width: 100%;
+}
+.lastMonth, .nextMonth{
+    color: lightslategray;
+}
+
+.month{
+    visibility: hidden;
+    position: absolute;
+}
+
+.active{
+    visibility: visible;
+}
+
+.nextButton{
+    position: absolute;
+    right: 27%;
+}
+
+.prevButton{
+    position: absolute;
+    right: 65%;
+}
+
+.weekDays{
+    height: 20px;
+}
+
+
+
+.free{
+    background-color: rgb(119, 241, 119);
+}
+
+.full{
+    background-color: rgb(255, 96, 96);
+}
+
+.partial{
+    background-color: rgb(247, 247, 158);
+}
+
+

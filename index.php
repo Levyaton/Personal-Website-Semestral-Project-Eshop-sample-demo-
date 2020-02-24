@@ -47,7 +47,20 @@ switch ($_SERVER['REQUEST_URI']) {
         break;
     case '/~levymaty/bikeGallery' :
         require __DIR__ . '/bikegallery/views/homepage.php';
+    case '/~levymaty/bikegallery/models/calenderOfLevyaton.js' :
+        require __DIR__ . '\bikegallery\models\calenderOfLevtaton.js';
+    case '/~levymaty/bikeGallery/views/getCalenderDB.php' :
+        require __DIR__ . '\bikegallery\Api\getCalenderDB.php';
+    case '/~levymaty/bikegallery/models/db.json';
+        require __DIR__ . '\bikegallery\models\db.json';
+    case '/~levymaty/bikegallery/Api/newEvent.php';
+        require __DIR__ . '\bikegallery\Api\newEvent.php';
+    case '/~levymaty/bikegallery/views/homepage.php';
+        require __DIR__ . '\bikegallery\views\homepage.php';
+    case '/~levymaty/bikegallery/views/getCalenderDB.php';
+        require __DIR__ . '\bikegallery\Api\getCalenderDB.php';
     default: 
+        echo $_SERVER['REQUEST_URI'];
         require __DIR__ . '/views/404.html';
         break;
 }
