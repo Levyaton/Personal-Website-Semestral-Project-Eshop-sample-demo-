@@ -58,7 +58,7 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/~levymaty/bikegallery/views/homepage.php';
         require __DIR__ . '\bikegallery\views\homepage.php';
     case '/~levymaty/bikegallery/views/getCalenderDB.php';
-        require __DIR__ . '\bikegallery\Api\getCalenderDB.php';
+        require __DIR__ . '/bikegallery/Api/getCalenderDB.php';
     default: 
         echo $_SERVER['REQUEST_URI'];
         require __DIR__ . '/views/404.html';
