@@ -1,6 +1,6 @@
 <?php
 
-    $link = $_SERVER['DOCUMENT_ROOT']."/~levymaty/bikegallery/models/db.json";
+    $link = __DIR__."/~levymaty/bikegallery/models/db.json";
     $file = file_get_contents($link);
     
    
@@ -8,4 +8,4 @@
     //echo "Testin Pufik";
     exit();
     
-?>
+?> 
