@@ -141,7 +141,7 @@ input{
 
 #legend{
     position: fixed;
-    bottom: 2%;
+    bottom: -10px;
     display: flex;
     flex-direction: row;
     align-items: center;
