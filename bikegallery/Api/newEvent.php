@@ -1,7 +1,7 @@
 <?php
 
 
-    $link = __DIR__.'/bikegallery/models/db.json';
+    $link =__DIR__."/../models/db.json";
     
     $json = ',{"eventDate": "'.$_POST['eventDate'].'","Event_Name":"'.$_POST['Service'].'","Description": "'.$_POST['Description'].'","First_Name":"'.$_POST['First_Name'].'","Last_Name":"'.$_POST['Last_Name'].'","Email":"'.$_POST['Email'].'","Bike_Brand":"'.$_POST['Bike_Brand'].'","Bike_Type":"'.$_POST['Bike_Type'].'","Service":"'.$_POST['Service'].'","TimeStart":"'.$_POST['TimeStart'].'"}]';
     $file = file_get_contents($link);
