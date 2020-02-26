@@ -1,6 +1,6 @@
 <?php
 
-    $link = __DIR__."/~levymaty/bikegallery/models/db.json";
+    $link = __DIR__."/../models/db.json";
     $file = file_get_contents($link);
     
    
