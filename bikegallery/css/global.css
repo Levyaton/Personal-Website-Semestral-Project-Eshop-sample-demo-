@@ -1,0 +1,306 @@
+*{
+   font: DecimaNova,"Helvetica Neue",Arial,sans-serif;
+   color: #1d1d1b;
+   align-items: center;
+}
+body{
+    background-color: #383838;
+}
+form{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: white;
+}
+
+option font{
+    color: white;
+}
+select{
+    color: white;
+    background-color: #cad401;
+    height: 54px;
+    text-align-last:right;    
+    padding-right: 29px;    
+    direction: rtl;
+}
+
+
+select font{
+    color: white;
+}
+
+option::selection font{
+    color: white;
+}
+option::selection{
+    color: white;
+    background-color: #cad401;
+}
+
+option:hover{
+    color: black;
+    background-color: #cad401;
+}
+
+option{
+    color: white;
+}
+
+hr{
+   
+    
+}
+
+#displayedDate{
+    margin-left: 2%;
+}
+.bikeFormElement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bikeFormElement *{
+    margin-bottom: 2%;
+}
+
+.bikeFormElement button{
+    width: 200px;
+}
+
+#bikeInf{
+    display: flex;
+    flex-direction: row;
+}
+
+#bikeFlex select{
+    margin-left: 2%;
+}
+
+
+.TextArea{
+    align-items: center;
+    position: relative;
+}
+
+
+
+.counter{
+    position: absolute;
+    right: 3px;
+    bottom: 1px;
+    font-size: x-small;
+    color: gray;
+}
+
+#logo{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+button{
+    color: black;
+}
+
+textarea{
+    color: white;
+    background-color: #cad401;
+}
+input{
+    color: white;
+    background-color: #cad401;
+}
+
+/*
+
+    Calendar CSS
+
+*/
+
+#Instructions{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
+#pickDate{
+
+
+}
+
+
+#cal{
+    position: relative;
+} 
+
+#submitButton{
+    display: none;
+}
+
+#legend{
+    position: fixed;
+    bottom: -10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    right: 32%;
+
+}
+
+#legend *{
+    margin-right: 2%;
+}
+.colorExplenation{
+    width: 100%;
+    top: 2%;
+}
+.example{
+    width: 10%;
+    height: 20px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    color: black;
+    width: 400px; 
+    text-align: center;
+    vertical-align: middle;
+}
+table{
+    background-color: gray;
+}
+
+td, th{
+    height: 50px;
+    background-color: white;
+}
+
+table thead{
+    width: 100%;
+}
+.lastMonth, .nextMonth{
+    color: lightslategray;
+}
+
+.month{
+    display: none;
+}
+
+.active{
+   display: block;
+}
+
+.nextButton{
+    
+}
+
+.prevButton{
+  
+}
+
+.weekDays{
+    height: 20px;
+}
+
+.monthName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 1px;
+
+}
+
+.monthNameText{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.free{
+    background-color: rgb(119, 241, 119);
+}
+
+.full{
+    background-color: rgb(255, 96, 96);
+}
+
+.partial{
+    background-color: rgb(247, 247, 158);
+}
+
+
+#bikeInf *{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+#bikeInf{
+    margin-bottom: 2%;
+}
+
+#userInf *{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+#userInf{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+#contactInf *{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+#contactInf{
+    display: flex;
+    margin-bottom: 2%;
+}
+.checkBoxOption{
+    display: flex;
+    flex-direction: row;
+    background-color: #cad401;
+}
+.options{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bikeFormElement .optionsDiv{
+    margin-left: auto;
+}
+
+#overCal{
+    display: flex;
+}
+
+#hourDiv{
+    margin-left: 10%;
+    
+}
+
+#hourDiv select{
+    margin-left: 2%;
+}
+
+.selectedDay{
+    border-radius: 10%;
+    border-width: 10%;
+    border-color: #cad401;
+}
+
+#Instructions{
+    display: none;
+}
